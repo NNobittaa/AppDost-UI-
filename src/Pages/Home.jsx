@@ -124,8 +124,8 @@ const AnimatedFloatingIcon = ({ children, finalPosition, delay }) => {
 const Home = () => {
   return (
     <>
-      <section className="relative w-full h-screen flex items-center justify-center z-0 md:pt-0 pt-10 ">
-        <div className="absolute inset-0 z-0 flex items-center justify-center md:block hidden">
+      <section className="relative w-full h-screen flex items-center justify-center z-0 md:pt-0 pt-10  ">
+        <div className="absolute inset-0 z-0  items-center justify-center md:flex hidden">
           {/* Main container for floating logos - critical for positioning */}
           <div className="relative w-full h-full mt-25 ">
             <AnimatedFloatingIcon
@@ -270,7 +270,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <div className="flex md:flex-row flex-col md:mt-8 mt-10 mx-auto justify-around w-[80%] px-8 pb-8 ">
+      <div className="flex md:flex-row flex-col md:my-8 my-10 mx-auto justify-around w-[80%] px-8 pb-8 ">
         <div className="text-white text-center md:border-none border md:my-0 my-2 md:bg-slate-900 bg-slate-800 p-6 rounded-xl hover:bg-slate-800 transition-transform all duration-300 ease-in-out hover:scale-105  ">
           <lord-icon
             className="m-2 size-20"
@@ -298,6 +298,48 @@ const Home = () => {
             src="https://cdn.lordicon.com/yudxjmzy.json"
             trigger="hover"
           ></lord-icon><br /><span className="text-3xl text-violet-500 font-bold">2025</span><br /><span className="text-xl m-3">Founded Year</span>
+        </div>
+      </div>
+      <div>
+        <div className='text-md text-center text-white'><span className=' font-semibold px-3.5 bg-slate-700 rounded-full py-2 m-8'>About AppDost</span></div>
+      </div>
+      <div className=''>
+        <div className='text-center md:m-12 m-6 text-white'>
+          <span className="font-bold md:text-5xl text-2xl ">
+            <p className="">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-violet-500 to-indigo-600 ">
+                Your{" "}
+              </span>
+              Trusted
+            </p>
+            <p>
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-violet-500 to-indigo-600">
+                Partner 
+              </span>{" "}
+              For
+            </p>
+            <p>
+              {" "}
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-violet-500 to-indigo-600">
+                Complete
+              </span>{" "}
+              Digital Transformation
+            </p>
+          </span>
+          <span className="text-md md:text-sm p-2 text-slate-300 md:mb-4 mb-2">
+            <p className="md:m-2 m-1">
+              AppDost is your trusted partner for complete digital transformation. We are a dynamic,{" "}
+            </p>
+            <p className="md:m-2 m-1">
+              innovation-driven IT solutions provider specializing in turning visionary ideas into powerful,
+            </p>
+            <p className="md:m-2 m-1">
+              market-ready products. Our mission is to empower businesses with cutting-edge technology
+            </p>
+            <p className="md:m-2 m-1">
+              solutions that drive growth, enhance user experiences, and create lasting digital impact.
+            </p>
+          </span>
         </div>
       </div>
     </>

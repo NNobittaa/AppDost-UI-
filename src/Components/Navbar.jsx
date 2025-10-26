@@ -4,7 +4,7 @@ import { useState } from "react";
 const Navbar = () => {
   return (
     <div
-      className="w-full flex justify-between md:justify-around items-center md:mx-0 px-2 py-2 md:py-3.5 fixed top-0 z-10
+      className="w-full flex justify-between md:justify-around items-center md:mx-0 px-2 py-2  md:py-3.5 fixed top-0 z-10
     backdrop-blur-sm text-white"
     >
       {/* Logo side */}
