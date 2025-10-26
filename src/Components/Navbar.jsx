@@ -13,17 +13,17 @@ const Navbar = () => {
           className=" mx-3"
           height={70}
           width={70}
-          src="./src/assets/appdost-logo.png"
+          src="./src/assets/appdost_logo.png"
           alt="AppDost"
         />
         <span
           className="font-bold bg-clip-text 
     text-transparent 
-    bg-gradient-to-r from-blue-400 to-blue-700"
+   from-blue-400 to-blue-700"
         >
           AppDost
           <br />
-          <span className="text-[14px] font-medium">Complete IT solution</span>
+          <span className="text-[14px] font-md">Complete IT solution</span>
         </span>
       </div></Link>
       {/* Page side */}
