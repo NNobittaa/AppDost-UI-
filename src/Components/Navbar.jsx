@@ -1,17 +1,18 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"; 
+import { useState } from "react";
 const Navbar = () => {
   return (
     <div
-      className="w-full flex md:justify-between px-10 sm:px-20 items-center py-3.5 fixed top-0 z-10 
-    backdrop-blur-sm text-white"
+      className="w-full flex justify-between md:justify-around items-center md:mx-0 px-2 py-2 md:py-3.5 fixed top-0 z-10
+    backdrop-blur-sm text-white bg-green-400 "
     >
       {/* Logo side */}
-      <Link to='/'><div className="flex justify-center items-center">
+      <Link to='/'><div className="flex justify-center items-center border md:h-10 h-10 md:w-60 w-60">
         <img
           className=" mx-3"
-          height={80}
-          width={80}
+          height={70}
+          width={70}
           src="./src/assets/appdost-logo.png"
           alt="AppDost"
         />
@@ -26,7 +27,7 @@ const Navbar = () => {
         </span>
       </div></Link>
       {/* Page side */}
-      <ul className="flex gap-4">
+      <ul className="gap-4 md:flex hidden">
         <Link to={"/"}>
           <li>Home</li>
         </Link>
@@ -46,6 +47,9 @@ const Navbar = () => {
           <li>Contact</li>
         </Link>
       </ul>
+      <div>
+        <img src="./src/assets/" alt="" />
+      </div>
       
     </div>
     

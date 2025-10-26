@@ -124,10 +124,10 @@ const AnimatedFloatingIcon = ({ children, finalPosition, delay }) => {
 const Home = () => {
   return (
     <>
-      <section className="relative w-full overflow-hidden h-screen flex items-center justify-center">
-        <div className="absolute inset-0 z-0 flex items-center justify-center">
+      <section className="relative w-full overflow-hidden h-screen flex items-center justify-center z-0 ">
+        <div className="absolute inset-0 z-0 flex items-center justify-center md:block hidden">
           {/* Main container for floating logos - critical for positioning */}
-          <div className="relative w-full h-full max-w-7xl max-h-7xl mt-25">
+          <div className="relative w-full h-full max-w-7xl max-h-7xl mt-25 ">
             <AnimatedFloatingIcon
               finalPosition={iconPositions.icon1}
               delay={0.2}
@@ -189,7 +189,7 @@ const Home = () => {
               Reality
             </p>
           </span>
-          <p className="text-sm font-md p-5 text-slate-300 mb-4">
+          <span className="text-sm font-md p-5 text-slate-300 mb-4">
             <p className="m-2">
               Your trusted partner for comprehensive IT solutions. From{" "}
             </p>
@@ -199,7 +199,7 @@ const Home = () => {
             <p className="m-2">
               excellence to every project with our expert team of developers.
             </p>
-          </p>
+          </span>
           <div className="mb-12">
             <span className=" bg-blue-500 py-3 px-4 rounded-full mb-8">
               Complete IT Solution Provider Since 2025
@@ -261,42 +261,42 @@ const Home = () => {
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M19 14l-7 7m0 0l-7-7m7 7V3"
               ></path>
             </svg>
           </div>
         </div>
       </section>
-      <div className="flex mx-auto justify-around border w-[80%] p-8 ">
-        <div className="text-white text-center">
+      <div className="flex mx-auto justify-around w-[80%] p-8 ">
+        <div className="text-white text-center p-6 rounded-xl hover:bg-slate-800 transition-transform all duration-300 ease-in-out hover:scale-105  ">
           <lord-icon
             className="m-2 size-20"
             src="https://cdn.lordicon.com/xmoniccu.json"
-            trigger="loop"
+            trigger="hover"
           ></lord-icon><br /><span className="text-3xl text-violet-500 font-bold">10+</span><br /><span className="text-xl m-3">Web Projects</span>
         </div>
-        <div className="text-white text-center">
+        <div className="text-white text-center p-6 rounded-xl hover:bg-slate-800 transition-transform all duration-300 ease-in-out hover:scale-105">
           <lord-icon
       className="m-2 size-20"
       src="https://cdn.lordicon.com/kgtbcywd.json"
-      trigger="loop"
+      trigger="hover"
     ></lord-icon><br /><span className="text-3xl text-violet-500 font-bold">4+</span><br /><span className="text-xl m-3">Android Apps</span>
         </div>
-        <div className="text-white text-center">
+        <div className="text-white text-center p-6 rounded-xl hover:bg-slate-800 transition-transform all duration-300 ease-in-out hover:scale-105">
           <lord-icon
             className="m-2 size-20"
             src="https://cdn.lordicon.com/edplgash.json"
-            trigger="loop"
+            trigger="hover"
           ></lord-icon><br /><span className="text-3xl text-violet-500 font-bold">1</span><br /><span className="text-xl m-3">CRM Project</span>
         </div>
-        <div className="text-white text-center">
+        <div className="text-white text-center p-6 rounded-xl hover:bg-slate-800 transition-transform all duration-300 ease-in-out hover:scale-105">
           <lord-icon
             className="m-2 size-20"
             src="https://cdn.lordicon.com/yudxjmzy.json"
-            trigger="loop"
+            trigger="hover"
           ></lord-icon><br /><span className="text-3xl text-violet-500 font-bold">2025</span><br /><span className="text-xl m-3">Founded Year</span>
         </div>
       </div>
