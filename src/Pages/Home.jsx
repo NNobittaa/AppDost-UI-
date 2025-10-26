@@ -124,10 +124,10 @@ const AnimatedFloatingIcon = ({ children, finalPosition, delay }) => {
 const Home = () => {
   return (
     <>
-      <section className="relative w-full overflow-hidden h-screen flex items-center justify-center z-0 ">
+      <section className="relative w-full h-screen flex items-center justify-center z-0 md:pt-0 pt-10 ">
         <div className="absolute inset-0 z-0 flex items-center justify-center md:block hidden">
           {/* Main container for floating logos - critical for positioning */}
-          <div className="relative w-full h-full max-w-7xl max-h-7xl mt-25 ">
+          <div className="relative w-full h-full mt-25 ">
             <AnimatedFloatingIcon
               finalPosition={iconPositions.icon1}
               delay={0.2}
@@ -166,8 +166,8 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="relative z-10 text-white text-center mt-20">
-          <span className="font-bold text-5xl ">
+        <div className="relative z-10 text-white text-center md:mt-20 mt-[40] md:p-4 p-8">
+          <span className="font-bold md:text-5xl text-2xl ">
             <p className="fade-in-text">
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-violet-500 to-indigo-600">
                 Transform{" "}
@@ -189,26 +189,26 @@ const Home = () => {
               Reality
             </p>
           </span>
-          <span className="text-sm font-md p-5 text-slate-300 mb-4">
-            <p className="m-2">
+          <span className="text-sm font-md p-1 text-slate-300 md:mb-4 mb-2">
+            <p className="md:m-2 m-1">
               Your trusted partner for comprehensive IT solutions. From{" "}
             </p>
-            <p className="m-2">
+            <p className="md:m-2 m-1">
               mobile apps to enterprise software, we bring innovation and
             </p>
-            <p className="m-2">
+            <p className="md:m-2 m-1">
               excellence to every project with our expert team of developers.
             </p>
           </span>
-          <div className="mb-12">
-            <span className=" bg-blue-500 py-3 px-4 rounded-full mb-8">
+          <div className="md:mb-12 mb-6 md:text-sm text-[12px]">
+            <span className=" bg-blue-500 md:py-3 py-2 md:px-4 px-2 rounded-full md:mb-8 mb-6">
               Complete IT Solution Provider Since 2025
             </span>
           </div>
-          <div className="buttons">
+          <div className="buttons md:text-md text-sm">
             <Link to="/services">
               <button
-                className="bg-blue-400 py-3 px-4 m-2 rounded-full bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:scale-105 transition-transform duration-300 ease-in-out hover:bg-gradient-to-br "
+                className="bg-blue-400 md:py-3 py-2 md:px-4 px-3 md:m-2 m-1 rounded-full bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:scale-105 transition-transform duration-300 ease-in-out hover:bg-gradient-to-br"
                 id="Explore"
               >
                 Explore Our Services
@@ -216,7 +216,7 @@ const Home = () => {
             </Link>
             <Link to="/contact">
               <button
-                className="bg-blue-400 py-3 px-4 m-2 rounded-full bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:scale-105 transition-transform duration-300 ease-in-out hover:bg-gradient-to-br "
+                className="bg-blue-400 md:py-3 py-2 md:px-4 px-3 md:m-2 m-1 rounded-full bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:scale-105 transition-transform duration-300 ease-in-out hover:bg-gradient-to-br "
                 id="Explore"
               >
                 Get Free Consultation
@@ -224,28 +224,28 @@ const Home = () => {
             </Link>
           </div>
           <div className="flex gap-3 mt-4">
-            <span className="bg-slate-700 py-1 px-2 pl-8 rounded-md relative mt-4 text-sm">
+            <span className="bg-slate-700 py-1 px-2 pl-8 rounded-md relative mt-4 md:text-sm text-[12px]">
               <img
                 src="./src/assets/tick.png"
-                className="left-3 invert top-2 absolute "
+                className="left-3 invert top-[35%] absolute "
                 width={12}
                 alt=""
               />
               100% Client Satisfaction
             </span>
-            <span className="bg-slate-700 py-1 px-2 pl-8 rounded-md relative mt-4 text-sm">
+            <span className="bg-slate-700 py-1 px-2 pl-8 rounded-md relative mt-4 md:text-sm text-[12px]">
               <img
                 src="./src/assets/security.png"
-                className="left-3 invert top-2 absolute "
+                className="left-3 invert top-[35%] absolute "
                 width={12}
                 alt=""
               />
               Secure & Scalable
             </span>
-            <span className="bg-slate-700 py-1 px-2 pl-8 rounded-md relative mt-4 text-sm">
+            <span className="bg-slate-700 py-1 px-2 pl-8 rounded-md relative mt-4 md:text-sm text-[12px]">
               <img
                 src="./src/assets/time.png"
-                className="left-2.5 invert top-1.5 absolute "
+                className="left-2.5 invert top-[25%] absolute "
                 width={16}
                 alt=""
               />
@@ -254,7 +254,7 @@ const Home = () => {
           </div>
           <div className=" mt-10 flex items-center justify-center">
             <svg
-              className="w-14 h-14 text-blue-600 animate-bounce"
+              className="md:size-12 size-6 text-blue-600 animate-bounce"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -270,29 +270,29 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <div className="flex mx-auto justify-around w-[80%] p-8 ">
-        <div className="text-white text-center p-6 rounded-xl hover:bg-slate-800 transition-transform all duration-300 ease-in-out hover:scale-105  ">
+      <div className="flex md:flex-row flex-col md:mt-8 mt-10 mx-auto justify-around w-[80%] px-8 pb-8 ">
+        <div className="text-white text-center md:border-none border md:my-0 my-2 md:bg-slate-900 bg-slate-800 p-6 rounded-xl hover:bg-slate-800 transition-transform all duration-300 ease-in-out hover:scale-105  ">
           <lord-icon
             className="m-2 size-20"
             src="https://cdn.lordicon.com/xmoniccu.json"
             trigger="hover"
           ></lord-icon><br /><span className="text-3xl text-violet-500 font-bold">10+</span><br /><span className="text-xl m-3">Web Projects</span>
         </div>
-        <div className="text-white text-center p-6 rounded-xl hover:bg-slate-800 transition-transform all duration-300 ease-in-out hover:scale-105">
+        <div className="text-white text-center md:border-none border md:my-0 my-2 md:bg-none bg-slate-800 p-6 rounded-xl hover:bg-slate-800 transition-transform all duration-300 ease-in-out hover:scale-105">
           <lord-icon
       className="m-2 size-20"
       src="https://cdn.lordicon.com/kgtbcywd.json"
       trigger="hover"
     ></lord-icon><br /><span className="text-3xl text-violet-500 font-bold">4+</span><br /><span className="text-xl m-3">Android Apps</span>
         </div>
-        <div className="text-white text-center p-6 rounded-xl hover:bg-slate-800 transition-transform all duration-300 ease-in-out hover:scale-105">
+        <div className="text-white text-center md:border-none border md:my-0 my-2 md:bg-none bg-slate-800 p-6 rounded-xl hover:bg-slate-800 transition-transform all duration-300 ease-in-out hover:scale-105">
           <lord-icon
             className="m-2 size-20"
             src="https://cdn.lordicon.com/edplgash.json"
             trigger="hover"
           ></lord-icon><br /><span className="text-3xl text-violet-500 font-bold">1</span><br /><span className="text-xl m-3">CRM Project</span>
         </div>
-        <div className="text-white text-center p-6 rounded-xl hover:bg-slate-800 transition-transform all duration-300 ease-in-out hover:scale-105">
+        <div className="text-white text-center md:border-none border md:my-0 my-2 md:bg-none bg-slate-800 p-6 rounded-xl hover:bg-slate-800 transition-transform all duration-300 ease-in-out hover:scale-105">
           <lord-icon
             className="m-2 size-20"
             src="https://cdn.lordicon.com/yudxjmzy.json"
