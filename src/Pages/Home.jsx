@@ -56,11 +56,82 @@ const Icon4 = () => (
   </div>
 );
 
+const WorkCultureValues = () => {
+  const values = [
+    {
+      icon: (
+        <span role="img" aria-label="innovation" className="mr-2 text-pink-500">
+          <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+          </svg>
+        </span>
+      ),
+      title: 'Innovation First',
+      description: 'Encouraging creative problem-solving',
+    },
+    {
+      icon: (
+        <span role="img" aria-label="collaboration" className="mr-2 text-yellow-500">
+          <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M17 20h-5m-5 0h10m-1 0v-2a4 4 0 00-4-4H7a4 4 0 00-4 4v2m3-8a4 4 0 11-8 0 4 4 0 018 0z" />
+          </svg>
+        </span>
+      ),
+      title: 'Collaborative Environment',
+      description: 'Cross-functional teamwork',
+    },
+    {
+      icon: (
+        <span role="img" aria-label="learning" className="mr-2 text-green-500">
+          <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.206 5 7.5 5A7.5 7.5 0 002 12c0 2.112.446 4.14 1.253 6H12m0-13V9m0 2.253A7.46 7.46 0 0115 12c0 2.112-.446 4.14-1.253 6H12m0-13a7.46 7.46 0 00-3.753-.967M12 21V9m0 12h8.25c.621 0 1.125-.504 1.125-1.125V11.25c0-.621-.504-1.125-1.125-1.125H12M9.75 4.5V21M9.75 4.5V6.75m0-2.25H7.5M9.75 4.5h2.25M4.5 9h15" />
+          </svg>
+        </span>
+      ),
+      title: 'Continuous Learning',
+      description: 'Regular training & workshops',
+    },
+    {
+      icon: (
+        <span role="img" aria-label="growth" className="mr-2 text-teal-500">
+          <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+          </svg>
+        </span>
+      ),
+      title: 'Growth Mindset',
+      description: 'Diverse projects & new technologies',
+    },
+    {
+      icon: (
+        <span role="img" aria-label="work-life-balance" className="mr-2 text-orange-500">
+          <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </span>
+      ),
+      title: 'Work-Life Balance',
+      description: 'Flexible arrangements',
+    },
+    {
+      icon: (
+        <span role="img" aria-label="recognition" className="mr-2 text-purple-500">
+          <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M11.085 19.231H4.55v-10.5h6.535m0 10.5c-.328 0-.649-.13-.881-.362-.232-.232-.362-.553-.362-.881v-10.5c0-.328.13-.649.362-.881.232-.232.553-.362.881-.362h8.835l2.25-1.125v12.75l-2.25-1.125-8.835 1.125z" />
+          </svg>
+        </span>
+      ),
+      title: 'Recognition & Rewards',
+      description: 'Celebrating achievements',
+    },
+  ];
+}
+
 // --- Icon Position Configuration ---
 // Define the final scattered position (using the previous layout as a base)
 const iconPositions = {
-  icon1: { top: "15%", left: "15%" },
-  icon2: { top: "15%", left: "85%" },
+  icon1: { top: "25%", left: "15%" },
+  icon2: { top: "25%", left: "85%" },
   icon3: { top: "60%", left: "15%" },
   icon4: { top: "60%", left: "85%" },
 };
@@ -125,7 +196,7 @@ const Home = () => {
   return (
     <>
       <section className="relative w-full h-screen flex items-center justify-center z-0 md:pt-0 pt-10">
-        <div className="absolute inset-0 z-30 items-center justify-center md:flex hidde">
+        <div className="absolute inset-0 z-30 items-center justify-center md:flex hidden">
           {/* Main container for floating logos - critical for positioning */}
           <div className="relative w-full h-full">
             <AnimatedFloatingIcon
@@ -276,35 +347,55 @@ const Home = () => {
             className="m-2 size-20"
             src="https://cdn.lordicon.com/xmoniccu.json"
             trigger="hover"
-          ></lord-icon><br /><span className="text-3xl text-violet-500 font-bold">10+</span><br /><span className="text-xl m-3">Web Projects</span>
+          ></lord-icon>
+          <br />
+          <span className="text-3xl text-violet-500 font-bold">10+</span>
+          <br />
+          <span className="text-xl m-3">Web Projects</span>
         </div>
         <div className="text-white text-center md:border-none border md:my-0 my-2 md:bg-slate-900 bg-slate-800 p-6 rounded-xl hover:bg-slate-800 transition-transform all duration-300 ease-in-out hover:scale-105">
           <lord-icon
-      className="m-2 size-20"
-      src="https://cdn.lordicon.com/kgtbcywd.json"
-      trigger="hover"
-    ></lord-icon><br /><span className="text-3xl text-violet-500 font-bold">4+</span><br /><span className="text-xl m-3">Android Apps</span>
+            className="m-2 size-20"
+            src="https://cdn.lordicon.com/kgtbcywd.json"
+            trigger="hover"
+          ></lord-icon>
+          <br />
+          <span className="text-3xl text-violet-500 font-bold">4+</span>
+          <br />
+          <span className="text-xl m-3">Android Apps</span>
         </div>
         <div className="text-white text-center md:border-none border md:my-0 my-2 md:bg-slate-900 bg-slate-800 p-6 rounded-xl hover:bg-slate-800 transition-transform all duration-300 ease-in-out hover:scale-105">
           <lord-icon
             className="m-2 size-20"
             src="https://cdn.lordicon.com/edplgash.json"
             trigger="hover"
-          ></lord-icon><br /><span className="text-3xl text-violet-500 font-bold">1</span><br /><span className="text-xl m-3">CRM Project</span>
+          ></lord-icon>
+          <br />
+          <span className="text-3xl text-violet-500 font-bold">1</span>
+          <br />
+          <span className="text-xl m-3">CRM Project</span>
         </div>
         <div className="text-white text-center md:border-none border md:my-0 my-2 md:bg-slate-900 bg-slate-800 p-6 rounded-xl hover:bg-slate-800 transition-transform all duration-300 ease-in-out hover:scale-105">
           <lord-icon
             className="m-2 size-20"
             src="https://cdn.lordicon.com/yudxjmzy.json"
             trigger="hover"
-          ></lord-icon><br /><span className="text-3xl text-violet-500 font-bold">2025</span><br /><span className="text-xl m-3">Founded Year</span>
+          ></lord-icon>
+          <br />
+          <span className="text-3xl text-violet-500 font-bold">2025</span>
+          <br />
+          <span className="text-xl m-3">Founded Year</span>
         </div>
       </div>
       <div>
-        <div className='text-md text-center text-white'><span className=' font-semibold px-3.5 bg-slate-700 rounded-full py-2 m-8'>About AppDost</span></div>
+        <div className="text-md text-center text-white">
+          <span className=" font-semibold px-3.5 bg-slate-700 rounded-full py-2 m-8">
+            About AppDost
+          </span>
+        </div>
       </div>
-      <div className=''>
-        <div className='text-center md:m-12 m-6 text-white'>
+      <div className="">
+        <div className="text-center md:m-12 m-6 text-white">
           <span className="font-bold md:text-5xl text-2xl ">
             <p className="">
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-violet-500 to-indigo-600 ">
@@ -314,7 +405,7 @@ const Home = () => {
             </p>
             <p>
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-violet-500 to-indigo-600">
-                Partner 
+                Partner
               </span>{" "}
               For
             </p>
@@ -328,18 +419,172 @@ const Home = () => {
           </span>
           <span className="text-md md:text-sm p-2 text-slate-300 md:mb-4 mb-2">
             <p className="md:m-2 m-1">
-              AppDost is your trusted partner for complete digital transformation. We are a dynamic,{" "}
+              AppDost is your trusted partner for complete digital
+              transformation. We are a dynamic,{" "}
             </p>
             <p className="md:m-2 m-1">
-              innovation-driven IT solutions provider specializing in turning visionary ideas into powerful,
+              innovation-driven IT solutions provider specializing in turning
+              visionary ideas into powerful,
             </p>
             <p className="md:m-2 m-1">
-              market-ready products. Our mission is to empower businesses with cutting-edge technology
+              market-ready products. Our mission is to empower businesses with
+              cutting-edge technology
             </p>
             <p className="md:m-2 m-1">
-              solutions that drive growth, enhance user experiences, and create lasting digital impact.
+              solutions that drive growth, enhance user experiences, and create
+              lasting digital impact.
             </p>
           </span>
+        </div>
+      </div>
+      <div>
+        <div className="text-md text-center text-white">
+          <span className=" font-semibold px-3.5 bg-slate-700 rounded-full py-2 m-8">
+            What We Do
+          </span>
+        </div>
+      </div>
+      <div className="text-white my-12 flex flex-col gap-8">
+        <div className="flex md:flex-row flex-col gap-8 mx-auto w-[80%]">
+          <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out hover:scale-105">
+            <span>
+              <lord-icon
+                className="m-2 size-20"
+                src="https://cdn.lordicon.com/nwfpiryp.json"
+                trigger="hover"
+              ></lord-icon>
+            </span>
+            <div className="text-xl font-bold my-4 text-yellow-300">
+              UI/UX Design Excellence
+            </div>
+            <p>
+              Crafting intuitive, user-centric designs that <br /> guarantee
+              exceptional user satisfaction and <br /> engagement. We believe
+              great design is <br /> invisible—it just works.
+            </p>
+          </div>
+          <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out hover:scale-105">
+            <span>
+              <lord-icon
+                className="m-2 size-20"
+                src="https://cdn.lordicon.com/ddgirohb.json"
+                trigger="hover"
+              ></lord-icon>
+            </span>
+            <div className="text-xl font-bold my-4 text-blue-300">
+              Custom Software Development
+            </div>
+            <p>
+              Building robust, scalable enterprise solutions <br /> tailored to your unique business <br /> requirements. From concept to deployment, <br /> we deliver excellence at every stage.
+            </p>
+          </div>
+          <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out hover:scale-105">
+            <span>
+              <lord-icon
+                className="m-2 size-20"
+                src="https://cdn.lordicon.com/xmoniccu.json"
+                trigger="hover"
+              ></lord-icon>
+            </span>
+            <div className="text-xl font-bold my-4 text-violet-500">
+              Web Application Development
+            </div>
+            <p>
+              Creating responsive, high-performance web <br /> applications using the latest frameworks and <br /> technologies. Your digital presence, <br />perfected.
+            </p>
+          </div>
+        </div>
+        <div className="flex md:flex-row flex-col gap-8 mx-auto w-[80%]">
+          <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out hover:scale-105">
+            <span>
+              <lord-icon
+                className="m-2 size-20"
+                src="https://cdn.lordicon.com/kgtbcywd.json"
+                trigger="hover"
+              ></lord-icon>
+            </span>
+            <div className="text-xl font-bold my-4 text-blue-500">
+              Mobile App <br />Development
+            </div>
+            <p>
+              Developing native and cross-platform mobile <br /> applications that users love. iOS, Android, <br /> or hybrid—we've got you covered. 
+            </p>
+          </div>
+          <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out hover:scale-105">
+            <span>
+              <lord-icon
+                className="m-2 size-20"
+                src="https://cdn.lordicon.com/ejjkasim.json"
+                trigger="hover"
+              ></lord-icon>
+            </span>
+            <div className="text-xl font-bold my-4 text-green-500">
+              Full-Stack Development
+            </div>
+            <p>
+              End-to-end development expertise covering<br /> frontend elegance, backend power, database <br /> optimization, and cloud infrastructure.
+            </p>
+          </div>
+          <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out hover:scale-105">
+            <span>
+              <lord-icon
+                className="m-2 size-20"
+                src="https://cdn.lordicon.com/zdwrqfmb.json"
+                trigger="hover"
+              ></lord-icon>
+            </span>
+            <div className="text-xl font-bold my-4 text-purple-600" >
+              Digital Transformation Consulting
+            </div>
+            <p>
+              Strategic guidance to help businesses<br /> navigate their digital journey, from legacy<br /> system modernization to cloud migration.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className=" text-white">
+        <div className="text-center text-white text-4xl font-bold mb-8 mt-16 ">
+          🌟 Why Choose AppDost?
+        </div>
+        <div>
+          <div className="flex md:flex-row flex-col gap-8 mx-auto w-[80%] py-8">
+            <div className="bg-slate-700 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out hover:scale-105">
+              <div className="font-bold"><span>✅</span> Complete Lifecycle Expertise</div>
+              <p className=" px-7 py-1 text-slate-100">From ideation to deployment and beyond</p>
+            </div>
+            <div className="bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out hover:scale-105">
+              <div className="font-bold"><span>✅</span> Complete Lifecycle Expertise</div>
+              <p className=" px-7 py-1 text-slate-100">From ideation to deployment and beyond</p>
+            </div>
+            <div className="bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out hover:scale-105">
+              <div className="font-bold"><span>✅</span> Complete Lifecycle Expertise</div>
+              <p className=" px-7 py-1 text-slate-100">From ideation to deployment and beyond</p>
+            </div>
+          </div>
+          <div className="flex md:flex-row flex-col gap-8 mx-auto w-[80%] pb-8">
+            <div className="bg-slate-700 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out hover:scale-105">
+              <div className="font-bold"><span>✅</span> Complete Lifecycle Expertise</div>
+              <p className=" px-7 py-1 text-slate-100">From ideation to deployment and beyond</p>
+            </div>
+            <div className="bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out hover:scale-105">
+              <div className="font-bold"><span>✅</span> Complete Lifecycle Expertise</div>
+              <p className=" px-7 py-1 text-slate-100">From ideation to deployment and beyond</p>
+            </div>
+            <div className="bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out hover:scale-105">
+              <div className="font-bold"><span>✅</span> Complete Lifecycle Expertise</div>
+              <p className=" px-7 py-1 text-slate-100">From ideation to deployment and beyond</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="flex mx-auto justify-between w-[80%] text-white border">
+        {/* Left */}
+        <div>
+          Left
+        </div>
+        {/* Right */}
+        <div>
+          Right
         </div>
       </div>
     </>
