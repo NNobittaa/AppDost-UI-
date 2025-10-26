@@ -278,21 +278,21 @@ const Home = () => {
             trigger="hover"
           ></lord-icon><br /><span className="text-3xl text-violet-500 font-bold">10+</span><br /><span className="text-xl m-3">Web Projects</span>
         </div>
-        <div className="text-white text-center md:border-none border md:my-0 my-2 md:bg-none bg-slate-800 p-6 rounded-xl hover:bg-slate-800 transition-transform all duration-300 ease-in-out hover:scale-105">
+        <div className="text-white text-center md:border-none border md:my-0 my-2 md:bg-slate-900 bg-slate-800 p-6 rounded-xl hover:bg-slate-800 transition-transform all duration-300 ease-in-out hover:scale-105">
           <lord-icon
       className="m-2 size-20"
       src="https://cdn.lordicon.com/kgtbcywd.json"
       trigger="hover"
     ></lord-icon><br /><span className="text-3xl text-violet-500 font-bold">4+</span><br /><span className="text-xl m-3">Android Apps</span>
         </div>
-        <div className="text-white text-center md:border-none border md:my-0 my-2 md:bg-none bg-slate-800 p-6 rounded-xl hover:bg-slate-800 transition-transform all duration-300 ease-in-out hover:scale-105">
+        <div className="text-white text-center md:border-none border md:my-0 my-2 md:bg-slate-900 bg-slate-800 p-6 rounded-xl hover:bg-slate-800 transition-transform all duration-300 ease-in-out hover:scale-105">
           <lord-icon
             className="m-2 size-20"
             src="https://cdn.lordicon.com/edplgash.json"
             trigger="hover"
           ></lord-icon><br /><span className="text-3xl text-violet-500 font-bold">1</span><br /><span className="text-xl m-3">CRM Project</span>
         </div>
-        <div className="text-white text-center md:border-none border md:my-0 my-2 md:bg-none bg-slate-800 p-6 rounded-xl hover:bg-slate-800 transition-transform all duration-300 ease-in-out hover:scale-105">
+        <div className="text-white text-center md:border-none border md:my-0 my-2 md:bg-slate-900 bg-slate-800 p-6 rounded-xl hover:bg-slate-800 transition-transform all duration-300 ease-in-out hover:scale-105">
           <lord-icon
             className="m-2 size-20"
             src="https://cdn.lordicon.com/yudxjmzy.json"
