@@ -124,8 +124,8 @@ const AnimatedFloatingIcon = ({ children, finalPosition, delay }) => {
 const Home = () => {
   return (
     <>
-      <section className="relative w-full h-screen flex items-center justify-center z-0 md:pt-0 pt-10  ">
-        <div className="absolute inset-0 z-0  items-center justify-center md:flex hidden">
+      <section className="relative w-full h-screen flex items-center justify-center z-0 md:pt-0 pt-10 ">
+        <div className="absolute inset-0 z-0 flex items-center justify-center md:block hidden">
           {/* Main container for floating logos - critical for positioning */}
           <div className="relative w-full h-full mt-25 ">
             <AnimatedFloatingIcon
