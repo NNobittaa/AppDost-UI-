@@ -18,10 +18,7 @@ import {
 
 const FeaturedArticleCard = () => {
   return (
-    <div className="w-full lg:w-[450px] shadow-xl rounded-2xl bg-white dark:bg-gray-800 transition-all hover:shadow-2xl overflow-hidden">
-      {/* Top Graphical Section (Large color block with Icon)
-        Uses a strong gradient similar to the image
-      */}
+    <div className="w-full lg:w-[450px] shadow-xl rounded-2xl bg-white dark:bg-gray-800 transition-all hover:shadow-2xl ">
       <div className="p-10 pt-16 h-72 rounded-t-2xl bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center relative">
         {/* Placeholder Icon for the document graphic */}
         <div className="p-6 bg-white/20 rounded-full">
@@ -133,7 +130,7 @@ const ProjectCardd = ({ project }) => {
   const IconComponent = project.Icon;
 
   return (
-    <div className="flex flex-col h-full bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-shadow hover:shadow-xl hover:scale-105 transition-transform all duration-300 ease-in-out">
+    <div className="flex flex-col h-full bg-white dark:bg-gray-800 rounded-xl shadow-lg transition-shadow hover:shadow-xl hover:scale-105 transition-transform all duration-300 ease-in-out">
       <div
         className={`p-6 pt-10 flex flex-col items-center justify-center ${project.colorClass} relative min-h-[140px]`}
       >
@@ -245,7 +242,7 @@ const ProjectCard = ({
   return (
     <div
       // Main Card Container
-      className="w-full max-w-sm bg-white rounded-xl shadow-xl overflow-hidden transform hover:scale-[1.02] transition duration-300"
+      className="w-full max-w-sm bg-white rounded-xl shadow-xl transform hover:scale-[1.02] transition duration-300"
       style={{ fontFamily: "Inter, sans-serif" }}
     >
       {/* Image/Graphic Section */}
@@ -725,7 +722,7 @@ const Home = () => {
   return (
     <>
       <section className="relative w-full h-screen flex items-center justify-center z-0 md:pt-0 pt-10">
-        <div className="absolute inset-0 z-30 items-center justify-center sm:flex hidden border">
+        <div className="absolute inset-0 z-30 items-center justify-center sm:flex hidden ">
           {/* Main container for floating logos - critical for positioning */}
           <div className="relative w-full h-full">
             <AnimatedFloatingIcon
@@ -1691,7 +1688,7 @@ hr@appdost.in"
       <div className="flex justify-center items-center py-20 px-4 sm:px-6 lg:px-8 min-h-[400px]">
       
       <div 
-        className="w-full max-w-4xl p-10 sm:p-14 rounded-3xl text-center shadow-2xl relative overflow-hidden"
+        className="w-full max-w-4xl p-10 sm:p-14 rounded-3xl text-center shadow-2xl relative"
         style={{
 
           backgroundColor: '#1a1a2e', 
