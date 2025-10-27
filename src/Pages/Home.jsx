@@ -1631,35 +1631,35 @@ hr@appdost.in"
         </div>
         <div className=" flex mx-auto w-[80%] justify-around flex-wrap">
           <div className="React border p-8 w-32 rounded-2xl text-center bg-white hover:scale-105 transition-transform all duration-300 ease-in-out hover:cursor-pointer hover:translate-1 m-4">
-            <span className="text-4xl "><img className="" src="./src/assets/react.svg" alt="" /></span><br />
+            <span className="text-4xl "><img className="" src="/atom.png" alt="" /></span><br />
             <p className="font-semibold">React</p>
           </div>
           <div className="React border p-8 w-32 rounded-2xl text-center bg-white hover:scale-105 transition-transform all duration-300 ease-in-out hover:cursor-pointer hover:translate-1 m-4">
-            <span className="text-4xl "><img src="./src/assets/nodejs.svg" alt="" /></span><br />
+            <span className="text-4xl "><img src="/node-js.png" alt="" /></span><br />
             <p className=" font-semibold">Node.js</p>
           </div>
           <div className="React border p-8 w-32 rounded-2xl text-center bg-white hover:scale-105 transition-transform all duration-300 ease-in-out hover:cursor-pointer hover:translate-1 m-4">
-            <span className="text-4xl "><img src="./src/assets/python.svg" alt="" /></span><br />
+            <span className="text-4xl "><img src="/python.png" alt="" /></span><br />
             <p className=" font-semibold">Python</p>
           </div>
           <div className="React border p-8 w-32 rounded-2xl text-center bg-white hover:scale-105 transition-transform all duration-300 ease-in-out hover:cursor-pointer hover:translate-1 m-4">
-            <span className="text-4xl "><img src="./src/assets/mongodb.svg" alt="" /></span><br />
+            <span className="text-4xl "><img src="/leaf.png" alt="" /></span><br />
             <p className=" font-semibold">MongoDB</p>
           </div>
           <div className="React border p-8 w-32 rounded-2xl text-center bg-white hover:scale-105 transition-transform all duration-300 ease-in-out hover:cursor-pointer hover:translate-1 m-4">
-            <span className="text-4xl "><img src="./src/assets/aws.svg" alt="" /></span><br />
+            <span className="text-4xl "><img src="/cloud-service.png" alt="" /></span><br />
             <p className="mt-6 font-semibold">AWS</p>
           </div>
           <div className="React border p-8 w-32 rounded-2xl text-center bg-white hover:scale-105 transition-transform all duration-300 ease-in-out hover:cursor-pointer hover:translate-1 m-4">
-            <span className="text-4xl "><img src="./src/assets/docker.svg" alt="" /></span><br />
+            <span className="text-4xl "><img src="/social.png" alt="" /></span><br />
             <p className=" font-semibold">Docker</p>
           </div>
           <div className="React border p-8 w-32 rounded-2xl text-center bg-white hover:scale-105 transition-transform all duration-300 ease-in-out hover:cursor-pointer hover:translate-1 m-4">
-            <span className="text-4xl "><img src="./src/assets/kotlin.svg" alt="" /></span><br />
+            <span className="text-4xl "><img src="/script.png" alt="" /></span><br />
             <p className=" font-semibold">Kotlin</p>
           </div>
           <div className="React border p-8 w-32 rounded-2xl text-center bg-white hover:scale-105 transition-transform all duration-300 ease-in-out hover:cursor-pointer hover:translate-1 m-4">
-            <span className="text-4xl "><img src="./src/assets/typescript.svg" alt="" /></span><br />
+            <span className="text-4xl "><img src="/typescript.png" alt="" /></span><br />
             <p className=" font-semibold">Typescript</p>
           </div>
         </div>

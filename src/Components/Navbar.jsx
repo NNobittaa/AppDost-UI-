@@ -40,6 +40,9 @@ const Navbar = () => {
         <Link to="/portfolio">
           <li className=' py-1 px-2 rounded-md hover:bg-violet-800 animation hover:scale-105 transition-transform duration-300 ease-in-out hover:text-slate-200 '>Portfolio</li>
         </Link>
+        <Link to="/careers">
+          <li className=' py-1 px-2 rounded-md hover:bg-violet-800 animation hover:scale-105 transition-transform duration-300 ease-in-out hover:text-slate-200 '>Careers</li>
+        </Link>
         <Link to="/blog">
           <li className=' py-1 px-2 rounded-md hover:bg-violet-800 animation hover:scale-105 transition-transform duration-300 ease-in-out hover:text-slate-200 '>Blog</li>
         </Link>
