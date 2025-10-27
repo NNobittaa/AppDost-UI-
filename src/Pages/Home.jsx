@@ -10,7 +10,67 @@ import {
   LineSquiggle,
   Briefcase,
   MessageCircle,
+  Clock, ArrowRight, FileText
 } from "lucide-react";
+
+
+
+const FeaturedArticleCard = () => {
+  return (
+    <div className="w-full lg:w-[450px] shadow-xl rounded-2xl bg-white dark:bg-gray-800 transition-all hover:shadow-2xl overflow-hidden">
+      {/* Top Graphical Section (Large color block with Icon)
+        Uses a strong gradient similar to the image
+      */}
+      <div className="p-10 pt-16 h-72 rounded-t-2xl bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center relative">
+        {/* Placeholder Icon for the document graphic */}
+        <div className="p-6 bg-white/20 rounded-full">
+            <FileText className="w-12 h-12 text-white/80" strokeWidth={1.5} />
+        </div>
+      </div>
+      
+      {/* Article Content Section */}
+      <div className="p-6 flex flex-col">
+        {/* Metadata: Tag and Reading Time */}
+        <div className="flex justify-between items-center text-sm mb-3">
+          <span className="px-3 py-1 text-xs font-semibold uppercase rounded-full bg-pink-100 text-pink-600 dark:bg-pink-900/40 dark:text-pink-300">
+            Design
+          </span>
+          <div className="flex items-center text-gray-500 dark:text-gray-400">
+            <Clock className="w-3.5 h-3.5 mr-1" />
+            <span>12 min</span>
+          </div>
+        </div>
+
+        {/* Title and Snippet */}
+        <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2 leading-snug hover:underline hover:cursor-pointer">
+          TestDisabled This account doesn't meet our policy...
+        </h3>
+        <p className="text-gray-500 dark:text-gray-400 text-sm mb-6 line-clamp-3 hover:underline hover:cursor-pointer">
+          TestDisabled This account doesn't meet our policy guidelines.Disabled This account doesn't meet our policy guidelines.Disabled This...
+        </p>
+
+        {/* Footer: Author and Date */}
+        <div className="flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-700 hover:cursor-pointer">
+          <div className="flex items-center">
+            {/* Author Avatar Placeholder */}
+            <div className="w-8 h-8 rounded-full bg-purple-500 flex items-center justify-center text-white text-xs font-bold mr-3">
+              AP
+            </div>
+            <div>
+              <p className="text-sm font-semibold text-gray-800 dark:text-gray-200">AppDost Team</p>
+              <p className="text-xs text-gray-500 dark:text-gray-400">Oct 12, 2025</p>
+            </div>
+          </div>
+          
+          {/* Read More Arrow */}
+          <button className="p-2 rounded-full text-purple-600 dark:text-purple-400 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors hover:cursor-pointer">
+            <ArrowRight className="w-5 h-5" />
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 const projects = [
   {
@@ -708,7 +768,7 @@ const Home = () => {
         </div>
 
         <div className="relative z-10 text-white text-center md:mt-20 mt-[40] md:p-4 p-8">
-          <span className="font-bold md:text-5xl text-2xl ">
+          <span className="font-bold text-5xl">
             <p className="fade-in-text">
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-violet-500 to-indigo-600">
                 Transform{" "}
@@ -730,7 +790,7 @@ const Home = () => {
               Reality
             </p>
           </span>
-          <span className="text-sm font-md p-1 text-slate-300 md:mb-4 mb-2">
+          <span className="text-sm font-md p-1 text-slate-300 md:mb-4">
             <p className="md:m-2 m-1">
               Your trusted partner for comprehensive IT solutions. From{" "}
             </p>
@@ -749,7 +809,7 @@ const Home = () => {
           <div className="buttons md:text-md text-sm">
             <Link to="/services">
               <button
-                className="bg-blue-400 md:py-3 py-2 md:px-4 px-3 md:m-2 m-1 rounded-full bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:scale-105 transition-transform duration-300 ease-in-out hover:bg-gradient-to-br"
+                className="bg-blue-400 py-3 md:px-4 px-3 md:m-2 m-1 rounded-full bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:scale-105 transition-transform duration-300 ease-in-out hover:bg-gradient-to-br"
                 id="Explore"
               >
                 Explore Our Services
@@ -757,7 +817,7 @@ const Home = () => {
             </Link>
             <Link to="/contact">
               <button
-                className="bg-blue-400 md:py-3 py-2 md:px-4 px-3 md:m-2 m-1 rounded-full bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:scale-105 transition-transform duration-300 ease-in-out hover:bg-gradient-to-br "
+                className="bg-blue-400 py-3  md:px-4 px-3 md:m-2 m-1 rounded-full bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:scale-105 transition-transform duration-300 ease-in-out hover:bg-gradient-to-br "
                 id="Explore"
               >
                 Get Free Consultation
@@ -795,7 +855,7 @@ const Home = () => {
           </div>
           <div className=" mt-10 flex items-center justify-center">
             <svg
-              className="md:size-12 size-6 text-blue-600 animate-bounce"
+              className="md:size-12 size-10 text-blue-600 animate-bounce"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -1572,7 +1632,131 @@ hr@appdost.in"
         
       </div>
       <div className=" w-[90%] mx-auto border border-slate-600 m-8"></div>
+      <div>
+        <div className="text-center ">
+          <label htmlFor="Projects">
+            <span className="text-white text-4xl font-bold mb-10 mt-16 border-b-4 border-blue-500 ">
+              Technologies We Master
+            </span>
+          </label>
+          <p className="my-8 text-white text-xl">
+            We leverage cutting-edge technologies to build robust, scalable, and innovative solutions
+          </p>
+        </div>
+        <div className=" border flex mx-auto w-[80%] justify-around flex-wrap">
+          <div className="React border p-8 w-32 rounded-2xl text-center bg-white hover:scale-105 transition-transform all duration-300 ease-in-out hover:cursor-pointer hover:translate-1 m-4">
+            <span className="text-4xl "><img className="" src="./src/assets/react.svg" alt="" /></span><br />
+            <p className="font-semibold">React</p>
+          </div>
+          <div className="React border p-8 w-32 rounded-2xl text-center bg-white hover:scale-105 transition-transform all duration-300 ease-in-out hover:cursor-pointer hover:translate-1 m-4">
+            <span className="text-4xl "><img src="./src/assets/nodejs.svg" alt="" /></span><br />
+            <p className=" font-semibold">Node.js</p>
+          </div>
+          <div className="React border p-8 w-32 rounded-2xl text-center bg-white hover:scale-105 transition-transform all duration-300 ease-in-out hover:cursor-pointer hover:translate-1 m-4">
+            <span className="text-4xl "><img src="./src/assets/python.svg" alt="" /></span><br />
+            <p className=" font-semibold">Python</p>
+          </div>
+          <div className="React border p-8 w-32 rounded-2xl text-center bg-white hover:scale-105 transition-transform all duration-300 ease-in-out hover:cursor-pointer hover:translate-1 m-4">
+            <span className="text-4xl "><img src="./src/assets/mongodb.svg" alt="" /></span><br />
+            <p className=" font-semibold">MongoDB</p>
+          </div>
+          <div className="React border p-8 w-32 rounded-2xl text-center bg-white hover:scale-105 transition-transform all duration-300 ease-in-out hover:cursor-pointer hover:translate-1 m-4">
+            <span className="text-4xl "><img src="./src/assets/aws.svg" alt="" /></span><br />
+            <p className="mt-6 font-semibold">AWS</p>
+          </div>
+          <div className="React border p-8 w-32 rounded-2xl text-center bg-white hover:scale-105 transition-transform all duration-300 ease-in-out hover:cursor-pointer hover:translate-1 m-4">
+            <span className="text-4xl "><img src="./src/assets/docker.svg" alt="" /></span><br />
+            <p className=" font-semibold">Docker</p>
+          </div>
+          <div className="React border p-8 w-32 rounded-2xl text-center bg-white hover:scale-105 transition-transform all duration-300 ease-in-out hover:cursor-pointer hover:translate-1 m-4">
+            <span className="text-4xl "><img src="./src/assets/kotlin.svg" alt="" /></span><br />
+            <p className=" font-semibold">Kotlin</p>
+          </div>
+          <div className="React border p-8 w-32 rounded-2xl text-center bg-white hover:scale-105 transition-transform all duration-300 ease-in-out hover:cursor-pointer hover:translate-1 m-4">
+            <span className="text-4xl "><img src="./src/assets/typescript.svg" alt="" /></span><br />
+            <p className=" font-semibold">Typescript</p>
+          </div>
+        </div>
+        
+        
+      </div>
+      <div className=" w-[90%] mx-auto border border-slate-600 m-8"></div>
+      <div>
+        <Link to='/blog'><div className=" bg-white dark:bg-gray-900 pb-16 px-4 flex flex-col items-center font-sans">
+      
+      {/* Header Section */}
+      <div className="max-w-3xl text-center mb-16">
+        <span className="inline-block px-3 py-1 mb-4 text-xs font-medium tracking-wider uppercase rounded-full bg-purple-100 text-purple-600 dark:bg-purple-900/40 dark:text-purple-300">
+          Latest Updates
+        </span>
+        <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 dark:text-white mb-4">
+          Insights & <span className="text-purple-600 dark:text-purple-400">Tech Articles</span>
+        </h2>
+        <p className="text-lg text-gray-600 dark:text-gray-400">
+          Stay informed with our latest insights, tech trends, and industry expertise
+        </p>
+      </div>
+
+      <FeaturedArticleCard />
+
+      </div></Link>
+      <div className="flex justify-center"><button className="bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl px-4 py-3 text-white font-semibold rounded-full transition-transform all duration-300 ease-in-out hover:scale-105 hover:cursor-pointer">
+            View All Articles
+          </button></div>
+      </div>
+      <div className="flex justify-center items-center py-20 px-4 sm:px-6 lg:px-8 min-h-[400px]">
+      
+      <div 
+        className="w-full max-w-4xl p-10 sm:p-14 rounded-3xl text-center shadow-2xl relative overflow-hidden"
+        style={{
+
+          backgroundColor: '#1a1a2e', 
+          '--gradient-size': '300%', // Size the gradient much larger than the container
+          '--start-color': 'rgba(45, 52, 71, 1)', // Dark Blue/Grey
+          '--mid-color': 'rgba(111, 74, 178, 0.5)', // Purple/Violet
+          '--end-color': 'rgba(28, 32, 53, 1)', // Very Dark Blue
+          
+          background: 'linear-gradient(-45deg, var(--start-color), var(--mid-color), var(--end-color), var(--start-color))',
+          backgroundSize: 'var(--gradient-size) var(--gradient-size)',
+          animation: 'move-gradient 15s ease infinite',
+        }}
+      >
+        <style jsx="true">{`
+          @keyframes move-gradient {
+            0% {
+              background-position: 0% 50%;
+            }
+            50% {
+              background-position: 100% 50%;
+            }
+            100% {
+              background-position: 0% 50%;
+            }
+          }
+        `}</style>
+        
+        <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4 z-10 relative">
+          Ready to Start Your Project?
+        </h2>
+        <p className="text-lg text-gray-200 mb-8 max-w-2xl mx-auto z-10 relative">
+          Let's discuss how we can help transform your ideas into reality with cutting-edge technology and expert development.
+        </p>
+
+        <div className="flex flex-col sm:flex-row justify-center gap-4 z-10 relative">
+
+          <Link to='/contact'><button className="bg-white text-[#1a1a2e] font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transition duration-300 transform hover:scale-[1.02]">
+            Get Free Consultation →
+          </button></Link>
+
+          <Link to='/services'><button className="bg-transparent border border-white/50 text-white font-semibold py-3 px-8 rounded-full hover:bg-white/10 transition duration-300 transform hover:scale-[1.02]">
+            View Our Services
+          </button></Link>
+        </div>
+      </div>
+    </div>
+    <div className=" w-[90%] mx-auto border border-slate-600 m-8"></div>
     </>
+  
   );
 };
 
