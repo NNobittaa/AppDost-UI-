@@ -1074,7 +1074,7 @@ const Home = () => {
         </div>
       </div>
       <div className=" w-[90%] mx-auto border border-slate-600 m-8"></div>
-      <div className=" text-white">
+      <div className="Why-choose text-white">
         <div className="text-center text-white text-4xl font-bold mb-8 mt-16 ">
           🌟 Why Choose AppDost?
         </div>
@@ -1135,7 +1135,7 @@ const Home = () => {
       </div>
       <div className="flex mx-auto justify-center md:w-[80%] text-white md:flex-row flex-col w-[80%] gap-4">
         {/* Left */}
-        <div className=" md:w-1/2 rounded-xl md:p-10 p-2 flex-flex-col md:m-4 m-0 w-full border shadow-2xl transition-transform all duration-300 ease-in-out hover:scale-105 ">
+        <div className=" md:w-1/2 rounded-xl md:p-10 p-2 flex-flex-col md:m-4 m-0 w-full bg-gray-800 shadow-2xl transition-transform all duration-300 ease-in-out hover:scale-105 ">
           <label htmlFor="AppDost " className="">
             <div className="text-center flex flex-col items-center  ">
               <div className="font-bold md:text-4xl text-2xl w-full  ">
@@ -1144,35 +1144,35 @@ const Home = () => {
               <p className="md:text-md text-sm">At AppDost, we believe in:</p>
             </div>
           </label>
-          <ul className="mt-10 md:text-md text-sm">
-            <li className="my-2.5 px-4 py-3 rounded-full bg-slate-600 hover:transition-transform all duration-300 ease-in-out hover:scale-105 hover:bg-blue-600 hover:cursor-pointer">
+          <ul className="mt-10 md:text-md text-sm p-2">
+            <li className="my-2.5 px-4 py-3 border-b-[1px] hover:transition-transform all duration-300 ease-in-out hover:scale-105 hover:bg-blue-600 hover:cursor-pointer">
               🎯<span className="font-bold">Innovation First</span> -
               Encouraging creative problem-solving
             </li>
-            <li className="my-2.5 px-4 py-3 rounded-full bg-slate-600 hover:transition-transform all duration-300 ease-in-out hover:scale-105 hover:bg-blue-600 hover:cursor-pointer">
+            <li className="my-2.5 px-4 py-3  border-b-[1px] hover:transition-transform all duration-300 ease-in-out hover:scale-105 hover:bg-blue-600 hover:cursor-pointer">
               🤝<span className="font-bold"> Collaborative Environment</span> -
               Cross-functional teamwork
             </li>
-            <li className="my-2.5 px-4 py-3 rounded-full bg-slate-600 hover:transition-transform all duration-300 ease-in-out hover:scale-105 hover:bg-blue-600 hover:cursor-pointer">
+            <li className="my-2.5 px-4 py-3 border-b-[1px] hover:transition-transform all duration-300 ease-in-out hover:scale-105 hover:bg-blue-600 hover:cursor-pointer">
               📚<span className="font-bold">Continuous Learning</span> - Regular
               training & workshops
             </li>
-            <li className="my-2.5 px-4 py-3 rounded-full bg-slate-600 hover:transition-transform all duration-300 ease-in-out hover:scale-105 hover:bg-blue-600 hover:cursor-pointer">
+            <li className="my-2.5 px-4 py-3  border-b-[1px] hover:transition-transform all duration-300 ease-in-out hover:scale-105 hover:bg-blue-600 hover:cursor-pointer">
               🌱<span className="font-bold">Growth Mindset</span> - Diverse
               projects & new technologies
             </li>
-            <li className="my-2.5 px-4 py-3 rounded-full bg-slate-600 hover:transition-transform all duration-300 ease-in-out hover:scale-105 hover:bg-blue-600 hover:cursor-pointer">
+            <li className="my-2.5 px-4 py-3  border-b-[1px] hover:transition-transform all duration-300 ease-in-out hover:scale-105 hover:bg-blue-600 hover:cursor-pointer">
               ⚖️<span className="font-bold">Work-Life Balance</span> - Flexible
               arrangements
             </li>
-            <li className="my-2.5 px-4 py-3 rounded-full bg-slate-600 hover:transition-transform all duration-300 ease-in-out hover:scale-105 hover:bg-blue-600 hover:cursor-pointer">
+            <li className="my-2.5 px-4 py-3 border-b-[1px] hover:transition-transform all duration-300 ease-in-out hover:scale-105 hover:bg-blue-600 hover:cursor-pointer">
               🏆<span className="font-bold">Recognition & Rewards</span> -
               Celebrating achievements
             </li>
           </ul>
         </div>
         {/* Right */}
-        <div className="md:w-1/2 w-full rounded-xl p-10 flex-flex-col md:m-4 m-0  border shadow-2xl transition-transform all duration-300 ease-in-out hover:scale-105">
+        <div className="md:w-1/2 w-full rounded-xl p-6 flex-flex-col md:m-4 m-0 bg-gray-800 shadow-2xl transition-transform all duration-300 ease-in-out hover:scale-105">
           <label htmlFor="Contact">
             <div className="font-bold text-4xl text-center">
               📞 Get In Touch
@@ -1199,12 +1199,12 @@ hr@appdost.in"
           </label>
           <div className="text-white ">
             <Link to="/careers">
-              <button className="p-4 relative  w-full m-2 rounded-xl font-semibold bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl transition-transform all duration-300 ease-in-out hover:scale-105 border items-center">
+              <button className="md:p-4 p-3 relative  w-full m-2 rounded-xl font-semibold bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl transition-transform all duration-300 ease-in-out hover:scale-105 items-center">
                 Join Our Team{" "}
               </button>
             </Link>
             <Link to="/contact">
-              <button className="p-4  w-full m-2 rounded-xl font-semibold bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl transition-transform all duration-300 ease-in-out hover:scale-105">
+              <button className="md:p-4 p-3 w-full m-2 rounded-xl font-semibold bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl transition-transform all duration-300 ease-in-out hover:scale-105">
                 {" "}
                 Start Your Project
               </button>
@@ -1500,7 +1500,7 @@ hr@appdost.in"
       </div>
       <div className=" w-[90%] mx-auto border border-slate-600 m-8"></div>
 
-      <div className=" Deve-Process text-white flex flex-col items-center mx-auto">
+      <div className=" Dev-Process text-white flex flex-col items-center mx-auto">
         <div className="text-center ">
           <label htmlFor="Services">
             <span className="text-white text-4xl font-bold mb-10 mt-16 border-b-4 border-blue-500 mx-8 ">
@@ -1602,7 +1602,7 @@ hr@appdost.in"
             {projects.map((project, index) => (
               <div
                 key={index}
-                className="w-full sm:w-[calc(50%-2rem)] lg:w-[calc(33.3333%-2rem)] min-w-[300px]"
+                className="w-full sm:w-[calc(50%-2rem)] lg:w-[calc(33.3333%-2rem)] mx-4"
               >
                 <ProjectCardd project={project} />
               </div>
