@@ -84,7 +84,7 @@ const StepperItem = ({ step, isFirst, isLast }) => {
 const Services = () => {
   return (
     <div className="w-full flex items-center justify-center z-0 pt-20  ">
-      <div className=" bg-white dark:bg-gray-900 pb-16 px-4 flex flex-col items-center font-sans ">
+      <div className=" bg-white dark:bg-gray-900 pb-16 px-4 flex flex-col items-center font-sans  ">
         {/* Header Section */}
         <div className="max-w-3xl text-center mt-8 ">
           <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 dark:text-white mb-4">
@@ -105,8 +105,8 @@ const Services = () => {
             </label>
           </div>
         <div className="services-box text-white my-12 flex flex-col gap-8 ">
-          <div className="flex md:flex-row flex-col gap-8 mx-auto w-[80%]">
-            <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out w-3/4 hover:scale-105">
+          <div className="flex md:flex-row flex-col gap-8 mx-auto items-center">
+            <div className="border bg-slate-700 border-slate-600 rounded-xl flex flex-col items-centerxl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out hover:scale-105 items-center text-center px-2">
               <span>
                 <lord-icon
                   className="m-2 size-20"
@@ -123,7 +123,7 @@ const Services = () => {
                 great design is <br /> invisible—it just works.
               </p>
             </div>
-            <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out w-3/4 hover:scale-105">
+            <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out hover:scale-105 flex flex-col items-center text-center px-2">
               <span>
                 <lord-icon
                   className="m-2 size-20"
@@ -140,7 +140,7 @@ const Services = () => {
                 deployment, <br /> we deliver excellence at every stage.
               </p>
             </div>
-            <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out w-3/4 hover:scale-105">
+            <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out hover:scale-105 flex flex-col items-center text-center px-2">
               <span>
                 <lord-icon
                   className="m-2 size-20"
@@ -159,8 +159,8 @@ const Services = () => {
               </p>
             </div>
           </div>
-          <div className="flex md:flex-row flex-col gap-8 mx-auto w-[80%]">
-            <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out w-3/4 hover:scale-105">
+          <div className="flex md:flex-row flex-col gap-8 mx-auto items-center">
+            <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out hover:scale-105 flex flex-col items-center text-center px-2">
               <span>
                 <lord-icon
                   className="m-2 size-20"
@@ -178,7 +178,7 @@ const Services = () => {
                 covered.
               </p>
             </div>
-            <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out w-3/4 hover:scale-105">
+            <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out hover:scale-105 flex flex-col items-center text-center px-2">
               <span>
                 <lord-icon
                   className="m-2 size-20"
@@ -195,7 +195,7 @@ const Services = () => {
                 optimization, and cloud infrastructure.
               </p>
             </div>
-            <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out w-3/4 hover:scale-105">
+            <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out hover:scale-105 flex flex-col items-center text-center px-2">
               <span>
                 <lord-icon
                   className="m-2 size-20"
@@ -222,7 +222,7 @@ const Services = () => {
               </span>
             </label>
           </div>
-          <div className="flex flex-col justify-center w-100 mb-8 mx-auto ">
+          <div className="flex flex-col justify-center mb-8 mx-8">
             {steps.map((step, index) => (
               <StepperItem
                 key={step.id}
@@ -233,8 +233,12 @@ const Services = () => {
             ))}
           </div>
         </div>
+              <div className=" w-[90%] mx-auto border border-slate-600 m-8"></div>
       </div>
+      
+      
     </div>
+    
   );
 };
 
