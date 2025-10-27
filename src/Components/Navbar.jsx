@@ -1,4 +1,5 @@
 import React from "react";
+
 import { Link } from "react-router-dom"; 
 import { useState } from "react";
 const Navbar = () => {
@@ -13,8 +14,7 @@ const Navbar = () => {
           className=" mx-3"
           height={70}
           width={70}
-          src="./src/assets/appdost-logo.png"
-          alt="AppDost"
+          src='/appdostlogo.png' alt="Appdost Logo"
         />
         <span
           className="font-bold bg-clip-text 
@@ -48,7 +48,7 @@ const Navbar = () => {
         </Link>
       </ul>
       <div className="md:hidden flex">
-        <img src="./src/assets/hamburger.png" width={20} className="m-2" alt="hamburger" />
+        <img src="/hamburger.png" width={20} className="m-2" alt="hamburger" />
       </div>
       
     </div>
