@@ -61,71 +61,143 @@ const WorkCultureValues = () => {
     {
       icon: (
         <span role="img" aria-label="innovation" className="mr-2 text-pink-500">
-          <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+          <svg
+            className="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth="2"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M13 10V3L4 14h7v7l9-11h-7z"
+            />
           </svg>
         </span>
       ),
-      title: 'Innovation First',
-      description: 'Encouraging creative problem-solving',
+      title: "Innovation First",
+      description: "Encouraging creative problem-solving",
     },
     {
       icon: (
-        <span role="img" aria-label="collaboration" className="mr-2 text-yellow-500">
-          <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M17 20h-5m-5 0h10m-1 0v-2a4 4 0 00-4-4H7a4 4 0 00-4 4v2m3-8a4 4 0 11-8 0 4 4 0 018 0z" />
+        <span
+          role="img"
+          aria-label="collaboration"
+          className="mr-2 text-yellow-500"
+        >
+          <svg
+            className="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth="2"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M17 20h-5m-5 0h10m-1 0v-2a4 4 0 00-4-4H7a4 4 0 00-4 4v2m3-8a4 4 0 11-8 0 4 4 0 018 0z"
+            />
           </svg>
         </span>
       ),
-      title: 'Collaborative Environment',
-      description: 'Cross-functional teamwork',
+      title: "Collaborative Environment",
+      description: "Cross-functional teamwork",
     },
     {
       icon: (
         <span role="img" aria-label="learning" className="mr-2 text-green-500">
-          <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.206 5 7.5 5A7.5 7.5 0 002 12c0 2.112.446 4.14 1.253 6H12m0-13V9m0 2.253A7.46 7.46 0 0115 12c0 2.112-.446 4.14-1.253 6H12m0-13a7.46 7.46 0 00-3.753-.967M12 21V9m0 12h8.25c.621 0 1.125-.504 1.125-1.125V11.25c0-.621-.504-1.125-1.125-1.125H12M9.75 4.5V21M9.75 4.5V6.75m0-2.25H7.5M9.75 4.5h2.25M4.5 9h15" />
+          <svg
+            className="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth="2"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M12 6.253v13m0-13C10.832 5.477 9.206 5 7.5 5A7.5 7.5 0 002 12c0 2.112.446 4.14 1.253 6H12m0-13V9m0 2.253A7.46 7.46 0 0115 12c0 2.112-.446 4.14-1.253 6H12m0-13a7.46 7.46 0 00-3.753-.967M12 21V9m0 12h8.25c.621 0 1.125-.504 1.125-1.125V11.25c0-.621-.504-1.125-1.125-1.125H12M9.75 4.5V21M9.75 4.5V6.75m0-2.25H7.5M9.75 4.5h2.25M4.5 9h15"
+            />
           </svg>
         </span>
       ),
-      title: 'Continuous Learning',
-      description: 'Regular training & workshops',
+      title: "Continuous Learning",
+      description: "Regular training & workshops",
     },
     {
       icon: (
         <span role="img" aria-label="growth" className="mr-2 text-teal-500">
-          <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+          <svg
+            className="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth="2"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+            />
           </svg>
         </span>
       ),
-      title: 'Growth Mindset',
-      description: 'Diverse projects & new technologies',
+      title: "Growth Mindset",
+      description: "Diverse projects & new technologies",
     },
     {
       icon: (
-        <span role="img" aria-label="work-life-balance" className="mr-2 text-orange-500">
-          <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+        <span
+          role="img"
+          aria-label="work-life-balance"
+          className="mr-2 text-orange-500"
+        >
+          <svg
+            className="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth="2"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
           </svg>
         </span>
       ),
-      title: 'Work-Life Balance',
-      description: 'Flexible arrangements',
+      title: "Work-Life Balance",
+      description: "Flexible arrangements",
     },
     {
       icon: (
-        <span role="img" aria-label="recognition" className="mr-2 text-purple-500">
-          <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M11.085 19.231H4.55v-10.5h6.535m0 10.5c-.328 0-.649-.13-.881-.362-.232-.232-.362-.553-.362-.881v-10.5c0-.328.13-.649.362-.881.232-.232.553-.362.881-.362h8.835l2.25-1.125v12.75l-2.25-1.125-8.835 1.125z" />
+        <span
+          role="img"
+          aria-label="recognition"
+          className="mr-2 text-purple-500"
+        >
+          <svg
+            className="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth="2"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M11.085 19.231H4.55v-10.5h6.535m0 10.5c-.328 0-.649-.13-.881-.362-.232-.232-.362-.553-.362-.881v-10.5c0-.328.13-.649.362-.881.232-.232.553-.362.881-.362h8.835l2.25-1.125v12.75l-2.25-1.125-8.835 1.125z"
+            />
           </svg>
         </span>
       ),
-      title: 'Recognition & Rewards',
-      description: 'Celebrating achievements',
+      title: "Recognition & Rewards",
+      description: "Celebrating achievements",
     },
   ];
-}
+};
 
 // --- Icon Position Configuration ---
 // Define the final scattered position (using the previous layout as a base)
@@ -475,7 +547,9 @@ const Home = () => {
               Custom Software Development
             </div>
             <p>
-              Building robust, scalable enterprise solutions <br /> tailored to your unique business <br /> requirements. From concept to deployment, <br /> we deliver excellence at every stage.
+              Building robust, scalable enterprise solutions <br /> tailored to
+              your unique business <br /> requirements. From concept to
+              deployment, <br /> we deliver excellence at every stage.
             </p>
           </div>
           <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out hover:scale-105">
@@ -490,7 +564,10 @@ const Home = () => {
               Web Application Development
             </div>
             <p>
-              Creating responsive, high-performance web <br /> applications using the latest frameworks and <br /> technologies. Your digital presence, <br />perfected.
+              Creating responsive, high-performance web <br /> applications
+              using the latest frameworks and <br /> technologies. Your digital
+              presence, <br />
+              perfected.
             </p>
           </div>
         </div>
@@ -504,10 +581,13 @@ const Home = () => {
               ></lord-icon>
             </span>
             <div className="text-xl font-bold my-4 text-blue-500">
-              Mobile App <br />Development
+              Mobile App <br />
+              Development
             </div>
             <p>
-              Developing native and cross-platform mobile <br /> applications that users love. iOS, Android, <br /> or hybrid—we've got you covered. 
+              Developing native and cross-platform mobile <br /> applications
+              that users love. iOS, Android, <br /> or hybrid—we've got you
+              covered.
             </p>
           </div>
           <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out hover:scale-105">
@@ -522,7 +602,9 @@ const Home = () => {
               Full-Stack Development
             </div>
             <p>
-              End-to-end development expertise covering<br /> frontend elegance, backend power, database <br /> optimization, and cloud infrastructure.
+              End-to-end development expertise covering
+              <br /> frontend elegance, backend power, database <br />{" "}
+              optimization, and cloud infrastructure.
             </p>
           </div>
           <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out hover:scale-105">
@@ -533,11 +615,13 @@ const Home = () => {
                 trigger="hover"
               ></lord-icon>
             </span>
-            <div className="text-xl font-bold my-4 text-purple-600" >
+            <div className="text-xl font-bold my-4 text-purple-600">
               Digital Transformation Consulting
             </div>
             <p>
-              Strategic guidance to help businesses<br /> navigate their digital journey, from legacy<br /> system modernization to cloud migration.
+              Strategic guidance to help businesses
+              <br /> navigate their digital journey, from legacy
+              <br /> system modernization to cloud migration.
             </p>
           </div>
         </div>
@@ -549,44 +633,123 @@ const Home = () => {
         <div>
           <div className="flex md:flex-row flex-col gap-8 mx-auto w-[80%] py-8">
             <div className="bg-slate-700 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out hover:scale-105">
-              <div className="font-bold"><span>✅</span> Complete Lifecycle Expertise</div>
-              <p className=" px-7 py-1 text-slate-100">From ideation to deployment and beyond</p>
+              <div className="font-bold">
+                <span>✅</span> Complete Lifecycle Expertise
+              </div>
+              <p className=" px-7 py-1 text-slate-100">
+                From ideation to deployment and beyond
+              </p>
             </div>
             <div className="bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out hover:scale-105">
-              <div className="font-bold"><span>✅</span> Complete Lifecycle Expertise</div>
-              <p className=" px-7 py-1 text-slate-100">From ideation to deployment and beyond</p>
+              <div className="font-bold">
+                <span>✅</span> Complete Lifecycle Expertise
+              </div>
+              <p className=" px-7 py-1 text-slate-100">
+                From ideation to deployment and beyond
+              </p>
             </div>
             <div className="bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out hover:scale-105">
-              <div className="font-bold"><span>✅</span> Complete Lifecycle Expertise</div>
-              <p className=" px-7 py-1 text-slate-100">From ideation to deployment and beyond</p>
+              <div className="font-bold">
+                <span>✅</span> Complete Lifecycle Expertise
+              </div>
+              <p className=" px-7 py-1 text-slate-100">
+                From ideation to deployment and beyond
+              </p>
             </div>
           </div>
           <div className="flex md:flex-row flex-col gap-8 mx-auto w-[80%] pb-8">
             <div className="bg-slate-700 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out hover:scale-105">
-              <div className="font-bold"><span>✅</span> Complete Lifecycle Expertise</div>
-              <p className=" px-7 py-1 text-slate-100">From ideation to deployment and beyond</p>
+              <div className="font-bold">
+                <span>✅</span> Complete Lifecycle Expertise
+              </div>
+              <p className=" px-7 py-1 text-slate-100">
+                From ideation to deployment and beyond
+              </p>
             </div>
             <div className="bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out hover:scale-105">
-              <div className="font-bold"><span>✅</span> Complete Lifecycle Expertise</div>
-              <p className=" px-7 py-1 text-slate-100">From ideation to deployment and beyond</p>
+              <div className="font-bold">
+                <span>✅</span> Complete Lifecycle Expertise
+              </div>
+              <p className=" px-7 py-1 text-slate-100">
+                From ideation to deployment and beyond
+              </p>
             </div>
             <div className="bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out hover:scale-105">
-              <div className="font-bold"><span>✅</span> Complete Lifecycle Expertise</div>
-              <p className=" px-7 py-1 text-slate-100">From ideation to deployment and beyond</p>
+              <div className="font-bold">
+                <span>✅</span> Complete Lifecycle Expertise
+              </div>
+              <p className=" px-7 py-1 text-slate-100">
+                From ideation to deployment and beyond
+              </p>
             </div>
           </div>
         </div>
       </div>
-      <div className="flex mx-auto justify-between w-[80%] text-white border">
+      <div className="flex mx-auto justify-center md:w-[80%] text-white md:flex-row flex-col border w-full">
         {/* Left */}
-        <div>
-          Left
+        <div className=" md:w-1/2 rounded-xl p-10 flex-flex-col m-4 hover:bg-slate-700  w-full">
+        <label htmlFor="AppDost " className="">
+          <div className="text-center flex flex-col items-center  ">
+            <div className="font-bold md:text-4xl text-2xl w-full  ">👥 Work Culture & Values</div>
+            <p className="md:text-md text-sm">At AppDost, we believe in:</p>
+          </div>
+          </label>
+          <ul className="mt-10 border md:text-md text-sm">
+            <li className="my-2.5 px-4 py-3 rounded-full bg-slate-600 hover:transition-transform all duration-300 ease-in-out hover:scale-105 hover:bg-slate-900 hover:cursor-pointer">
+              🎯<span className="font-bold">Innovation First</span> -
+              Encouraging creative problem-solving
+            </li>
+            <li className="my-2.5 px-4 py-3 rounded-full bg-slate-600 hover:transition-transform all duration-300 ease-in-out hover:scale-105 hover:bg-slate-900 hover:cursor-pointer">
+              🤝<span className="font-bold"> Collaborative Environment</span> -
+              Cross-functional teamwork
+            </li>
+            <li className="my-2.5 px-4 py-3 rounded-full bg-slate-600 hover:transition-transform all duration-300 ease-in-out hover:scale-105 hover:bg-slate-900 hover:cursor-pointer">
+              📚<span className="font-bold">Continuous Learning</span> - Regular
+              training & workshops
+            </li>
+            <li className="my-2.5 px-4 py-3 rounded-full bg-slate-600 hover:transition-transform all duration-300 ease-in-out hover:scale-105 hover:bg-slate-900 hover:cursor-pointer">
+              🌱<span className="font-bold">Growth Mindset</span> - Diverse
+              projects & new technologies
+            </li>
+            <li className="my-2.5 px-4 py-3 rounded-full bg-slate-600 hover:transition-transform all duration-300 ease-in-out hover:scale-105 hover:bg-slate-900 hover:cursor-pointer">
+              ⚖️<span className="font-bold">Work-Life Balance</span> - Flexible
+              arrangements
+            </li>
+            <li className="my-2.5 px-4 py-3 rounded-full bg-slate-600 hover:transition-transform all duration-300 ease-in-out hover:scale-105 hover:bg-slate-900 hover:cursor-pointer">
+              🏆<span className="font-bold">Recognition & Rewards</span> -
+              Celebrating achievements
+            </li>
+          </ul>
         </div>
         {/* Right */}
-        <div>
-          Right
+        <div className="w-1/2 rounded-xl p-10 flex-flex-col m-4 hover:bg-slate-700">
+        <label htmlFor="Contact">
+        <div className="font-bold text-4xl text-center">
+          📞 Get In Touch
         </div>
-      </div>
+            <p className="text-center px-10 text-xl flex flex-col gap-4 ">
+              <br />
+              <span className="font-semibold">🌐 Website:</span>
+              <a href="www.appdost.inbr">www.appdost.in</a>
+              <br />
+              📧 Email:
+              <a
+                href="contact@appdost.
+hr@appdost.in"
+              >
+                contact@appdost. hr@appdost.in
+              </a>
+              <br />
+              📍 Locations: <br />
+              HQ-Patna, Motihari, Banka <br />
+              📞 Phone: <br />
+              +91 76350 75422 <br />
+              +91 11 6929 0750
+            </p>
+            </label>
+          </div>
+          
+        </div>
     </>
   );
 };
