@@ -48,7 +48,7 @@ const Navbar = () => {
         </Link>
       </ul>
       <div className="md:hidden flex">
-        <img src="/hamburger.png" width={20} className="m-2" alt="hamburger" />
+        <img src="/hamburger.png" width={20} className="m-2 invert" alt="hamburger" />
       </div>
       
     </div>
