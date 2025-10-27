@@ -912,8 +912,8 @@ const Home = () => {
         </div>
       </div>
       <div className="">
-        <div className="text-center md:m-12 m-6 text-white">
-          <span className="font-bold md:text-5xl text-2xl ">
+        <div className="text-center md:m-12 m-10 text-white">
+          <span className="font-bold text-5xl">
             <p className="">
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-violet-500 to-indigo-600 ">
                 Your{" "}
@@ -964,8 +964,8 @@ const Home = () => {
       </div>
 
       <div className="services-box text-white my-12 flex flex-col gap-8 ">
-        <div className="flex md:flex-row flex-col gap-8 mx-auto w-[80%]">
-          <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out w-3/4 hover:scale-105">
+        <div className="flex md:flex-row flex-col gap-8 mx-auto w-[80%] items-center justify-center">
+          <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out hover:scale-105 flex items-center flex-col">
             <span>
               <lord-icon
                 className="m-2 size-20"
@@ -982,7 +982,7 @@ const Home = () => {
               great design is <br /> invisible—it just works.
             </p>
           </div>
-          <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out w-3/4 hover:scale-105">
+          <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out hover:scale-105 flex items-center flex-col">
             <span>
               <lord-icon
                 className="m-2 size-20"
@@ -999,7 +999,7 @@ const Home = () => {
               deployment, <br /> we deliver excellence at every stage.
             </p>
           </div>
-          <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out w-3/4 hover:scale-105">
+          <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out hover:scale-105 flex items-center flex-col">
             <span>
               <lord-icon
                 className="m-2 size-20"
@@ -1018,8 +1018,8 @@ const Home = () => {
             </p>
           </div>
         </div>
-        <div className="flex md:flex-row flex-col gap-8 mx-auto w-[80%]">
-          <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out w-3/4 hover:scale-105">
+        <div className="flex md:flex-row flex-col gap-8 mx-auto w-[80%] items-center justify-center">
+          <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out hover:scale-105 flex items-center flex-col">
             <span>
               <lord-icon
                 className="m-2 size-20"
@@ -1037,7 +1037,7 @@ const Home = () => {
               covered.
             </p>
           </div>
-          <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out w-3/4 hover:scale-105">
+          <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out hover:scale-105 flex items-center flex-col">
             <span>
               <lord-icon
                 className="m-2 size-20"
@@ -1054,7 +1054,7 @@ const Home = () => {
               optimization, and cloud infrastructure.
             </p>
           </div>
-          <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out w-3/4 hover:scale-105">
+          <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out hover:scale-105 flex items-center flex-col">
             <span>
               <lord-icon
                 className="m-2 size-20"
@@ -1223,8 +1223,8 @@ hr@appdost.in"
         </div>
       </div>
       <div className="services-box text-white my-12 flex flex-col gap-8 ">
-        <div className="flex md:flex-row flex-col gap-8 mx-auto w-[80%]">
-          <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out w-3/4 hover:scale-105 items-center flex flex-col">
+        <div className="flex md:flex-row flex-col gap-8 mx-auto w-[80%] items-center">
+          <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out w-[90%] hover:scale-105 items-center flex flex-col">
             <span className="">
               <lord-icon
                 className="m-2 size-20"
@@ -1269,7 +1269,7 @@ hr@appdost.in"
               </p>
             </div>
           </div>
-          <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out w-3/4 hover:scale-105 items-center flex flex-col">
+          <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out w-[90%] hover:scale-105 items-center flex flex-col">
             <span className="">
               <lord-icon
                 className="m-2 size-20"
@@ -1314,7 +1314,7 @@ hr@appdost.in"
               </p>
             </div>
           </div>
-          <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out w-3/4 hover:scale-105 items-center flex flex-col">
+          <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out w-[90%] hover:scale-105 items-center flex flex-col">
             <span className="">
               <lord-icon
                 className="m-2 size-20"
@@ -1360,8 +1360,8 @@ hr@appdost.in"
             </div>
           </div>
         </div>
-        <div className="flex md:flex-row flex-col gap-8 mx-auto w-[80%]">
-          <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out w-3/4 hover:scale-105 items-center flex flex-col">
+        <div className="flex md:flex-row flex-col gap-8 mx-auto w-[80%] items-center">
+          <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out w-[90%] hover:scale-105 items-center flex flex-col">
             <span className="">
               <lord-icon
                 className="m-2 size-20"
@@ -1406,7 +1406,7 @@ hr@appdost.in"
               </p>
             </div>
           </div>
-          <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out w-3/4 hover:scale-105 items-center flex flex-col">
+          <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out w-[90%] hover:scale-105 items-center flex flex-col">
             <span className="">
               <lord-icon
                 className="m-2 size-20"
@@ -1451,7 +1451,7 @@ hr@appdost.in"
               </p>
             </div>
           </div>
-          <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out w-3/4 hover:scale-105 items-center flex flex-col">
+          <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out w-[90%] hover:scale-105 items-center flex flex-col">
             <span className="">
               <lord-icon
                 className="m-2 size-20"
@@ -1503,16 +1503,16 @@ hr@appdost.in"
       <div className=" text-white flex flex-col items-center mx-auto">
         <div className="text-center ">
           <label htmlFor="Services">
-            <span className="text-white text-4xl font-bold mb-10 mt-16 border-b-4 border-blue-500 ">
+            <span className="text-white text-4xl font-bold mb-10 mt-16 border-b-4 border-blue-500 mx-8 ">
               Our Development Process
             </span>
           </label>
-          <p className="my-8 text-white text-xl">
+          <p className="my-8 text-white text-xl mx-8">
             A proven methodology that ensures quality, efficiency, and client
             satisfaction
           </p>
         </div>
-        <div className="flex flex-col justify-center w-100 mb-8 mx-auto ">
+        <div className="flex flex-col justify-center mb-8 mx-8">
           {steps.map((step, index) => (
             <StepperItem
               key={step.id}
@@ -1527,15 +1527,15 @@ hr@appdost.in"
       <div className="mx-auto flex flex-col justify-center">
         <div className="text-center ">
           <label htmlFor="Projects">
-            <span className="text-white text-4xl font-bold mb-10 mt-16 border-b-4 border-blue-500 ">
+            <span className="text-white text-4xl font-bold mb-10 mt-16 border-b-4 border-blue-500 mx-8">
               Our Featured Projects
             </span>
           </label>
-          <p className="my-8 text-white text-xl">
+          <p className="my-8 text-white text-xl mx-8">
             Real solutions for real businesses - explore our successful projects
           </p>
         </div>
-        <div className="p-4 md:p-10 bg-slate-900 mx-auto px-10 w-[90%] rounded-2xl">
+        <div className="p-4 md:p-10 bg-slate-900 mx-auto px-10 w-[90%] rounded-2xl flex justify-center">
           <style
             dangerouslySetInnerHTML={{
               __html: `
@@ -1588,11 +1588,11 @@ hr@appdost.in"
       <div>
         <div className="text-center ">
           <label htmlFor="Projects">
-            <span className="text-white text-4xl font-bold mb-10 mt-16 border-b-4 border-blue-500 ">
+            <span className="text-white text-4xl font-bold mb-10 mt-16 border-b-4 border-blue-500 mx-8 text-center">
               Open Source & Innovation Projects
             </span>
           </label>
-          <p className="my-8 text-white text-xl">
+          <p className="my-8 text-white text-xl mx-8">
             Explore our contributions to AI, automation, and educational
             technology
           </p>
@@ -1610,7 +1610,7 @@ hr@appdost.in"
           </div>
         </div>
           <div className="mx-auto text-white flex flex-col items-center gap-4">
-          <p>Interested in working with us on your next project?</p>
+          <p className="m-8">Interested in working with us on your next project?</p>
           <button className="bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl px-4 py-3 text-white font-semibold rounded-full transition-transform all duration-300 ease-in-out hover:scale-105 hover:cursor-pointer">
             Start Your Project
           </button>
