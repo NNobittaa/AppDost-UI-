@@ -10,7 +10,8 @@ import {
   LineSquiggle,
   Briefcase,
   MessageCircle,
-  Clock, ArrowRight, FileText
+  Clock, ArrowRight, FileText,
+  Check, Shield
 } from "lucide-react";
 
 
@@ -825,33 +826,18 @@ const Home = () => {
             </Link>
           </div>
           <div className="flex gap-3 mt-4">
-            <span className="bg-slate-700 py-1 px-2 pl-8 rounded-md relative mt-4 md:text-sm text-[12px]">
-              <img
-                src="./src/assets/tick.png"
-                className="left-3 invert top-[35%] absolute "
-                width={12}
-                alt=""
-              />
+            <div className="bg-slate-700 flex items-center justify-center py-1 px-4 rounded-md gap-0.5  relative mt-4 md:text-sm text-[12px]">
+              <Check />
               100% Client Satisfaction
-            </span>
-            <span className="bg-slate-700 py-1 px-2 pl-8 rounded-md relative mt-4 md:text-sm text-[12px]">
-              <img
-                src="./src/assets/security.png"
-                className="left-3 invert top-[35%] absolute "
-                width={12}
-                alt=""
-              />
+            </div>
+            <div className="bg-slate-700 flex items-center justify-center py-1 px-4 rounded-md gap-0.5  relative mt-4 md:text-sm text-[12px]">
+              <Shield />
               Secure & Scalable
-            </span>
-            <span className="bg-slate-700 py-1 px-2 pl-8 rounded-md relative mt-4 md:text-sm text-[12px]">
-              <img
-                src="./src/assets/time.png"
-                className="left-2.5 invert top-[25%] absolute "
-                width={16}
-                alt=""
-              />
+            </div>
+            <div className="bg-slate-700 flex items-center justify-center py-1 px-4 rounded-md gap-0.5  relative mt-4 md:text-sm text-[12px]">
+              <Clock />
               24/7 Support
-            </span>
+            </div>
           </div>
           <div className=" mt-10 flex items-center justify-center">
             <svg
