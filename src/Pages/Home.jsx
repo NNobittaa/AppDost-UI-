@@ -1577,7 +1577,7 @@ hr@appdost.in"
           </div>
         </div>
         <div className="flex justify-center">
-          <Link to='/projects'><button className="bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl px-4 py-3 text-white font-semibold rounded-full transition-transform all duration-300 ease-in-out hover:scale-105 hover:cursor-pointer">
+          <Link to='/portfolio'><button className="bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl px-4 py-3 text-white font-semibold rounded-full transition-transform all duration-300 ease-in-out hover:scale-105 hover:cursor-pointer">
             View All Projects
           </button></Link>
         </div>
