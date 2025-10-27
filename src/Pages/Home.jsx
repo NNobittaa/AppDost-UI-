@@ -1684,9 +1684,9 @@ hr@appdost.in"
       <FeaturedArticleCard />
 
       </div></Link>
-      <div className="flex justify-center"><button className="bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl px-4 py-3 text-white font-semibold rounded-full transition-transform all duration-300 ease-in-out hover:scale-105 hover:cursor-pointer">
+      <div className="flex justify-center"><Link to='/blog'><button className="bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl px-4 py-3 text-white font-semibold rounded-full transition-transform all duration-300 ease-in-out hover:scale-105 hover:cursor-pointer">
             View All Articles
-          </button></div>
+          </button></Link></div>
       </div>
       <div className="flex justify-center items-center py-20 px-4 sm:px-6 lg:px-8 min-h-[400px]">
       
