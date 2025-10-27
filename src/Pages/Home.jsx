@@ -460,6 +460,7 @@ const Home = () => {
         </div>
       </div>
       <div>
+        <div className=" w-[90%] mx-auto border border-slate-600 m-8"></div>
         <div className="text-md text-center text-white">
           <span className=" font-semibold px-3.5 bg-slate-700 rounded-full py-2 m-8">
             About AppDost
@@ -509,16 +510,18 @@ const Home = () => {
           </span>
         </div>
       </div>
-      <div>
+      <div className=" w-[90%] mx-auto border border-slate-600 m-8"></div>
+      <div className="what-we-do">
         <div className="text-md text-center text-white">
           <span className=" font-semibold px-3.5 bg-slate-700 rounded-full py-2 m-8">
             What We Do
           </span>
         </div>
       </div>
-      <div className="text-white my-12 flex flex-col gap-8">
+
+      <div className="services-box text-white my-12 flex flex-col gap-8 ">
         <div className="flex md:flex-row flex-col gap-8 mx-auto w-[80%]">
-          <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out hover:scale-105">
+          <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out w-3/4 hover:scale-105">
             <span>
               <lord-icon
                 className="m-2 size-20"
@@ -535,7 +538,7 @@ const Home = () => {
               great design is <br /> invisible—it just works.
             </p>
           </div>
-          <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out hover:scale-105">
+          <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out w-3/4 hover:scale-105">
             <span>
               <lord-icon
                 className="m-2 size-20"
@@ -552,7 +555,7 @@ const Home = () => {
               deployment, <br /> we deliver excellence at every stage.
             </p>
           </div>
-          <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out hover:scale-105">
+          <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out w-3/4 hover:scale-105">
             <span>
               <lord-icon
                 className="m-2 size-20"
@@ -572,7 +575,7 @@ const Home = () => {
           </div>
         </div>
         <div className="flex md:flex-row flex-col gap-8 mx-auto w-[80%]">
-          <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out hover:scale-105">
+          <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out w-3/4 hover:scale-105">
             <span>
               <lord-icon
                 className="m-2 size-20"
@@ -590,7 +593,7 @@ const Home = () => {
               covered.
             </p>
           </div>
-          <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out hover:scale-105">
+          <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out w-3/4 hover:scale-105">
             <span>
               <lord-icon
                 className="m-2 size-20"
@@ -607,7 +610,7 @@ const Home = () => {
               optimization, and cloud infrastructure.
             </p>
           </div>
-          <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out hover:scale-105">
+          <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out w-3/4 hover:scale-105">
             <span>
               <lord-icon
                 className="m-2 size-20"
@@ -626,6 +629,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <div className=" w-[90%] mx-auto border border-slate-600 m-8"></div>
       <div className=" text-white">
         <div className="text-center text-white text-4xl font-bold mb-8 mt-16 ">
           🌟 Why Choose AppDost?
@@ -685,48 +689,50 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="flex mx-auto justify-center md:w-[80%] text-white md:flex-row flex-col  w-full">
+      <div className="flex mx-auto justify-center md:w-[80%] text-white md:flex-row flex-col w-[80%] gap-4">
         {/* Left */}
-        <div className=" md:w-1/2 rounded-xl p-10 flex-flex-col m-4 hover:bg-slate-700 w-full">
-        <label htmlFor="AppDost " className="">
-          <div className="text-center flex flex-col items-center  ">
-            <div className="font-bold md:text-4xl text-2xl w-full  ">👥 Work Culture & Values</div>
-            <p className="md:text-md text-sm">At AppDost, we believe in:</p>
-          </div>
+        <div className=" md:w-1/2 rounded-xl md:p-10 p-2 flex-flex-col md:m-4 m-0 w-full border shadow-2xl transition-transform all duration-300 ease-in-out hover:scale-105 ">
+          <label htmlFor="AppDost " className="">
+            <div className="text-center flex flex-col items-center  ">
+              <div className="font-bold md:text-4xl text-2xl w-full  ">
+                👥 Work Culture & Values
+              </div>
+              <p className="md:text-md text-sm">At AppDost, we believe in:</p>
+            </div>
           </label>
-          <ul className="mt-10 border md:text-md text-sm">
-            <li className="my-2.5 px-4 py-3 rounded-full bg-slate-600 hover:transition-transform all duration-300 ease-in-out hover:scale-105 hover:bg-slate-900 hover:cursor-pointer">
+          <ul className="mt-10 md:text-md text-sm">
+            <li className="my-2.5 px-4 py-3 rounded-full bg-slate-600 hover:transition-transform all duration-300 ease-in-out hover:scale-105 hover:bg-blue-600 hover:cursor-pointer">
               🎯<span className="font-bold">Innovation First</span> -
               Encouraging creative problem-solving
             </li>
-            <li className="my-2.5 px-4 py-3 rounded-full bg-slate-600 hover:transition-transform all duration-300 ease-in-out hover:scale-105 hover:bg-slate-900 hover:cursor-pointer">
+            <li className="my-2.5 px-4 py-3 rounded-full bg-slate-600 hover:transition-transform all duration-300 ease-in-out hover:scale-105 hover:bg-blue-600 hover:cursor-pointer">
               🤝<span className="font-bold"> Collaborative Environment</span> -
               Cross-functional teamwork
             </li>
-            <li className="my-2.5 px-4 py-3 rounded-full bg-slate-600 hover:transition-transform all duration-300 ease-in-out hover:scale-105 hover:bg-slate-900 hover:cursor-pointer">
+            <li className="my-2.5 px-4 py-3 rounded-full bg-slate-600 hover:transition-transform all duration-300 ease-in-out hover:scale-105 hover:bg-blue-600 hover:cursor-pointer">
               📚<span className="font-bold">Continuous Learning</span> - Regular
               training & workshops
             </li>
-            <li className="my-2.5 px-4 py-3 rounded-full bg-slate-600 hover:transition-transform all duration-300 ease-in-out hover:scale-105 hover:bg-slate-900 hover:cursor-pointer">
+            <li className="my-2.5 px-4 py-3 rounded-full bg-slate-600 hover:transition-transform all duration-300 ease-in-out hover:scale-105 hover:bg-blue-600 hover:cursor-pointer">
               🌱<span className="font-bold">Growth Mindset</span> - Diverse
               projects & new technologies
             </li>
-            <li className="my-2.5 px-4 py-3 rounded-full bg-slate-600 hover:transition-transform all duration-300 ease-in-out hover:scale-105 hover:bg-slate-900 hover:cursor-pointer">
+            <li className="my-2.5 px-4 py-3 rounded-full bg-slate-600 hover:transition-transform all duration-300 ease-in-out hover:scale-105 hover:bg-blue-600 hover:cursor-pointer">
               ⚖️<span className="font-bold">Work-Life Balance</span> - Flexible
               arrangements
             </li>
-            <li className="my-2.5 px-4 py-3 rounded-full bg-slate-600 hover:transition-transform all duration-300 ease-in-out hover:scale-105 hover:bg-slate-900 hover:cursor-pointer">
+            <li className="my-2.5 px-4 py-3 rounded-full bg-slate-600 hover:transition-transform all duration-300 ease-in-out hover:scale-105 hover:bg-blue-600 hover:cursor-pointer">
               🏆<span className="font-bold">Recognition & Rewards</span> -
               Celebrating achievements
             </li>
           </ul>
         </div>
         {/* Right */}
-        <div className="w-1/2 rounded-xl p-10 flex-flex-col m-4 hover:bg-slate-700">
-        <label htmlFor="Contact">
-        <div className="font-bold text-4xl text-center">
-          📞 Get In Touch
-        </div>
+        <div className="md:w-1/2 w-full rounded-xl p-10 flex-flex-col md:m-4 m-0  border shadow-2xl transition-transform all duration-300 ease-in-out hover:scale-105">
+          <label htmlFor="Contact">
+            <div className="font-bold text-4xl text-center">
+              📞 Get In Touch
+            </div>
             <p className="text-center px-10 text-xl flex flex-col gap-4 ">
               <br />
               <span className="font-semibold">🌐 Website:</span>
@@ -746,10 +752,309 @@ hr@appdost.in"
               +91 76350 75422 <br />
               +91 11 6929 0750
             </p>
-            </label>
+          </label>
+          <div className="text-white ">
+            <Link to="/careers">
+              <button className="p-4 relative  w-full m-2 rounded-xl font-semibold bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl transition-transform all duration-300 ease-in-out hover:scale-105 border items-center">
+                Join Our Team{" "}
+              </button>
+            </Link>
+            <Link to="/contact">
+              <button className="p-4  w-full m-2 rounded-xl font-semibold bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl transition-transform all duration-300 ease-in-out hover:scale-105">
+                {" "}
+                Start Your Project
+              </button>
+            </Link>
           </div>
-          
         </div>
+      </div>
+      <div className=" w-[90%] mx-auto border border-slate-600 m-8"></div>
+      <div className="Services">
+        <div className="text-center ">
+          <label htmlFor="Services">
+            <span className="text-white text-4xl font-bold mb-10 mt-16 border-b-4 border-blue-500 ">
+              Our services
+            </span>
+          </label>
+        </div>
+      </div>
+      <div className="services-box text-white my-12 flex flex-col gap-8 ">
+        <div className="flex md:flex-row flex-col gap-8 mx-auto w-[80%]">
+          <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out w-3/4 hover:scale-105 items-center flex flex-col">
+            <span className="">
+              <lord-icon
+                className="m-2 size-20"
+                src="https://cdn.lordicon.com/kgtbcywd.json"
+                trigger="hover"
+              ></lord-icon>
+            </span>
+            <div className="text-xl font-bold my-4 text-blue-500">
+              App Development
+            </div>
+            <p className="text-center">
+              Custom Android applications built with <br />
+              the latest technologies to bring your <br /> ideas to life.
+            </p>
+            <div className="my-6">
+              <p className="relative px-8">
+                {" "}
+                <lord-icon
+                  className="absolute left-0 h-6"
+                  src="https://cdn.lordicon.com/hrtsficn.json"
+                  trigger="hover"
+                ></lord-icon>
+                Native & Hybrid Apps{" "}
+              </p>
+              <p className="relative px-8">
+                {" "}
+                <lord-icon
+                  className="absolute left-0 h-6"
+                  src="https://cdn.lordicon.com/hrtsficn.json"
+                  trigger="hover"
+                ></lord-icon>
+                Play Store Deployment{" "}
+              </p>
+              <p className="relative px-8">
+                {" "}
+                <lord-icon
+                  className="absolute left-0 h-6"
+                  src="https://cdn.lordicon.com/hrtsficn.json"
+                  trigger="hover"
+                ></lord-icon>
+                Maintenance & Support{" "}
+              </p>
+            </div>
+          </div>
+          <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out w-3/4 hover:scale-105 items-center flex flex-col">
+            <span className="">
+              <lord-icon
+                className="m-2 size-20"
+                src="https://cdn.lordicon.com/xmoniccu.json"
+                trigger="hover"
+              ></lord-icon>
+            </span>
+            <div className="text-xl font-bold my-4 text-blue-500">
+             Web Development
+            </div>
+            <p className="text-center">
+              Responsive and scalable web <br />
+              applications tailored to your business <br /> needs.
+            </p>
+            <div className="my-6">
+              <p className="relative px-8">
+                {" "}
+                <lord-icon
+                  className="absolute left-0 h-6"
+                  src="https://cdn.lordicon.com/hrtsficn.json"
+                  trigger="hover"
+                ></lord-icon>
+                Responsive Design{" "}
+              </p>
+              <p className="relative px-8">
+                {" "}
+                <lord-icon
+                  className="absolute left-0 h-6"
+                  src="https://cdn.lordicon.com/hrtsficn.json"
+                  trigger="hover"
+                ></lord-icon>
+                E-commerce Solutions{" "}
+              </p>
+              <p className="relative px-8">
+                {" "}
+                <lord-icon
+                  className="absolute left-0 h-6"
+                  src="https://cdn.lordicon.com/hrtsficn.json"
+                  trigger="hover"
+                ></lord-icon>
+                Progressive Web Apps{" "}
+              </p>
+            </div>
+          </div>
+          <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out w-3/4 hover:scale-105 items-center flex flex-col">
+            <span className="">
+              <lord-icon
+                className="m-2 size-20"
+                src="https://cdn.lordicon.com/nwfpiryp.json"
+                trigger="hover"
+              ></lord-icon>
+            </span>
+            <div className="text-xl font-bold my-4 text-blue-500">
+              UI/UX Development
+            </div>
+            <p className="text-center">
+              Beautiful, intuitive user interfaces <br />
+              that enhance user experience <br /> and engagement.
+            </p>
+            <div className="my-6">
+              <p className="relative px-8">
+                {" "}
+                <lord-icon
+                  className="absolute left-0 h-6"
+                  src="https://cdn.lordicon.com/hrtsficn.json"
+                  trigger="hover"
+                ></lord-icon>
+                User Research{" "}
+              </p>
+              <p className="relative px-8">
+                {" "}
+                <lord-icon
+                  className="absolute left-0 h-6"
+                  src="https://cdn.lordicon.com/hrtsficn.json"
+                  trigger="hover"
+                ></lord-icon>
+                Wireframing{" "}
+              </p>
+              <p className="relative px-8">
+                {" "}
+                <lord-icon
+                  className="absolute left-0 h-6"
+                  src="https://cdn.lordicon.com/hrtsficn.json"
+                  trigger="hover"
+                ></lord-icon>
+                Brand Identity{" "}
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="flex md:flex-row flex-col gap-8 mx-auto w-[80%]">
+          <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out w-3/4 hover:scale-105 items-center flex flex-col">
+            <span className="">
+              <lord-icon
+                className="m-2 size-20"
+                src="https://cdn.lordicon.com/qaeqyqcc.json"
+                trigger="hover"
+              ></lord-icon>
+            </span>
+            <div className="text-xl font-bold my-4 text-blue-500">
+              CRM Software
+            </div>
+            <p className="text-center">
+              Comprehensive CRM solutions to <br />
+              manage customer relationships and <br /> boost productivity.
+            </p>
+            <div className="my-6">
+              <p className="relative px-8">
+                {" "}
+                <lord-icon
+                  className="absolute left-0 h-6"
+                  src="https://cdn.lordicon.com/hrtsficn.json"
+                  trigger="hover"
+                ></lord-icon>
+                Custom Developmen{" "}
+              </p>
+              <p className="relative px-8">
+                {" "}
+                <lord-icon
+                  className="absolute left-0 h-6"
+                  src="https://cdn.lordicon.com/hrtsficn.json"
+                  trigger="hover"
+                ></lord-icon>
+                Integration Services{" "}
+              </p>
+              <p className="relative px-8">
+                {" "}
+                <lord-icon
+                  className="absolute left-0 h-6"
+                  src="https://cdn.lordicon.com/hrtsficn.json"
+                  trigger="hover"
+                ></lord-icon>
+                Maintenance & Support{" "}
+              </p>
+            </div>
+          </div>
+          <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out w-3/4 hover:scale-105 items-center flex flex-col">
+            <span className="">
+              <lord-icon
+                className="m-2 size-20"
+                src="https://cdn.lordicon.com/vbfznnhs.json"
+                trigger="hover"
+              ></lord-icon>
+            </span>
+            <div className="text-xl font-bold my-4 text-blue-500">
+              Cloud Solutions
+            </div>
+            <p className="text-center">
+              Scalable cloud infrastructure and <br />
+              migration services for modern <br /> businesses.
+            </p>
+            <div className="my-6">
+              <p className="relative px-8">
+                {" "}
+                <lord-icon
+                  className="absolute left-0 h-6"
+                  src="https://cdn.lordicon.com/hrtsficn.json"
+                  trigger="hover"
+                ></lord-icon>
+                AWS, Azure, GCP{" "}
+              </p>
+              <p className="relative px-8">
+                {" "}
+                <lord-icon
+                  className="absolute left-0 h-6"
+                  src="https://cdn.lordicon.com/hrtsficn.json"
+                  trigger="hover"
+                ></lord-icon>
+                Migration Services{" "}
+              </p>
+              <p className="relative px-8">
+                {" "}
+                <lord-icon
+                  className="absolute left-0 h-6"
+                  src="https://cdn.lordicon.com/hrtsficn.json"
+                  trigger="hover"
+                ></lord-icon>
+                Performance Tuning{" "}
+              </p>
+            </div>
+          </div>
+          <div className="border bg-slate-700 border-slate-600 rounded-xl p-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out w-3/4 hover:scale-105 items-center flex flex-col">
+            <span className="">
+              <lord-icon
+                className="m-2 size-20"
+                src="https://cdn.lordicon.com/drdlomqk.json"
+                trigger="hover"
+              ></lord-icon>
+            </span>
+            <div className="text-xl font-bold my-4 text-blue-500">
+              Cybersecurity
+            </div>
+            <p className="text-center">
+              Protect your business with robust <br />
+              security solutions and best practices.
+            </p>
+            <div className="my-6">
+              <p className="relative px-8">
+                {" "}
+                <lord-icon
+                  className="absolute left-0 h-6"
+                  src="https://cdn.lordicon.com/hrtsficn.json"
+                  trigger="hover"
+                ></lord-icon>
+                Security Audits{" "}
+              </p>
+              <p className="relative px-8">
+                {" "}
+                <lord-icon
+                  className="absolute left-0 h-6"
+                  src="https://cdn.lordicon.com/hrtsficn.json"
+                  trigger="hover"
+                ></lord-icon>
+                Penetration Testing{" "}
+              </p>
+              <p className="relative px-8">
+                {" "}
+                <lord-icon
+                  className="absolute left-0 h-6"
+                  src="https://cdn.lordicon.com/hrtsficn.json"
+                  trigger="hover"
+                ></lord-icon>
+                Compliance{" "}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className=" w-[90%] mx-auto border border-slate-600 m-8"></div>
     </>
   );
 };
