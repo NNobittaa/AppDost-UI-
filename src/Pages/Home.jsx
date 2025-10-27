@@ -685,9 +685,9 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="flex mx-auto justify-center md:w-[80%] text-white md:flex-row flex-col border w-full">
+      <div className="flex mx-auto justify-center md:w-[80%] text-white md:flex-row flex-col  w-full">
         {/* Left */}
-        <div className=" md:w-1/2 rounded-xl p-10 flex-flex-col m-4 hover:bg-slate-700  w-full">
+        <div className=" md:w-1/2 rounded-xl p-10 flex-flex-col m-4 hover:bg-slate-700 w-full">
         <label htmlFor="AppDost " className="">
           <div className="text-center flex flex-col items-center  ">
             <div className="font-bold md:text-4xl text-2xl w-full  ">👥 Work Culture & Values</div>
