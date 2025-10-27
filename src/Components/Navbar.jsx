@@ -13,7 +13,7 @@ const Navbar = () => {
           className=" mx-3"
           height={70}
           width={70}
-          src="https://appdost.in/images/appdost-logo.png"
+          src="./src/assets/appdost-logo.png"
           alt="AppDost"
         />
         <span
