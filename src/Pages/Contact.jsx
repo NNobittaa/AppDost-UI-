@@ -56,10 +56,10 @@ const Careers = () => {
             </p>
             <p className="my-2 text-center hover:underline">
               <div className=" flex gap-3">
-                <span><img className="hover:scale-110 transition-transform all duration-300 ease-in-out" src="./src/assets/instagram.png" height={28} width={28} alt="" /></span>
-                <span><img className="hover:scale-110 transition-transform all duration-300 ease-in-out" src="./src/assets/twitter.png" height={28} width={28} alt="" /></span>
-                <span><img className="hover:scale-110 transition-transform all duration-300 ease-in-out" src="./src/assets/linkedin.png" height={28} width={28} alt="" /></span>
-                <span><img className="hover:scale-110 transition-transform all duration-300 ease-in-out" src="./src/assets/facebook.png" height={28} width={28} alt="" /></span>
+                <span><img className="hover:scale-110 transition-transform all duration-300 ease-in-out" src="/instagram.png" height={28} width={28} alt="" /></span>
+                <span><img className="hover:scale-110 transition-transform all duration-300 ease-in-out" src="/twitter.png" height={28} width={28} alt="" /></span>
+                <span><img className="hover:scale-110 transition-transform all duration-300 ease-in-out" src="/linkedin.png" height={28} width={28} alt="" /></span>
+                <span><img className="hover:scale-110 transition-transform all duration-300 ease-in-out" src="/facebook.png" height={28} width={28} alt="" /></span>
               </div>
             </p>
             <p className="text-slate-400 text-center">We'll respond within 24 hours</p>
