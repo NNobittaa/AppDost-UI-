@@ -436,7 +436,6 @@ const Icon4 = () => (
     </span>
   </div>
 );
-
 const WorkCultureValues = () => {
   const values = [
     {
@@ -579,7 +578,6 @@ const WorkCultureValues = () => {
     },
   ];
 };
-
 // --- Icon Position Configuration ---
 // Define the final scattered position (using the previous layout as a base)
 const iconPositions = {
@@ -727,7 +725,7 @@ const Home = () => {
   return (
     <>
       <section className="relative w-full h-screen flex items-center justify-center z-0 md:pt-0 pt-10">
-        <div className="absolute inset-0 z-30 items-center justify-center md:flex hidden">
+        <div className="absolute inset-0 z-30 items-center justify-center sm:flex hidden border">
           {/* Main container for floating logos - critical for positioning */}
           <div className="relative w-full h-full">
             <AnimatedFloatingIcon
@@ -768,8 +766,8 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="relative z-10 text-white text-center md:mt-20 mt-[40] md:p-4 p-8">
-          <span className="font-bold text-5xl">
+        <div className="relative z-10 text-white text-center md:mt-20 mt-4 ">
+          <span className="font-bold text-5xl p-2">
             <p className="fade-in-text">
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-violet-500 to-indigo-600">
                 Transform{" "}
@@ -802,7 +800,7 @@ const Home = () => {
               excellence to every project with our expert team of developers.
             </p>
           </span>
-          <div className="md:mb-12 mb-6 md:text-sm text-[12px]">
+          <div className="md:mb-12 mb-6 md:text-sm text-[12px] p-2">
             <span className=" bg-blue-500 md:py-3 py-2 md:px-4 px-2 rounded-full md:mb-8 mb-6">
               Complete IT Solution Provider Since 2025
             </span>
@@ -825,7 +823,7 @@ const Home = () => {
               </button>
             </Link>
           </div>
-          <div className="flex gap-3 mt-4">
+          <div className="flex gap-3 mt-4 px-2">
             <div className="bg-slate-700 flex items-center justify-center py-1 px-4 rounded-md gap-0.5  relative mt-4 md:text-sm text-[12px]">
               <Check />
               100% Client Satisfaction
