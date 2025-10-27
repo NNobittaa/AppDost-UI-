@@ -130,7 +130,7 @@ const ProjectCardd = ({ project }) => {
   const IconComponent = project.Icon;
 
   return (
-    <div className="flex flex-col h-full bg-white dark:bg-gray-800 rounded-xl shadow-lg transition-shadow hover:shadow-xl hover:scale-105 transition-transform all duration-300 ease-in-out">
+    <div className="flex flex-col h-full bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-shadow hover:shadow-xl hover:scale-105 transition-transform all duration-300 ease-in-out">
       <div
         className={`p-6 pt-10 flex flex-col items-center justify-center ${project.colorClass} relative min-h-[140px]`}
       >
