@@ -1,6 +1,326 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import {
+  Search,
+  Brush,
+  Bug,
+  Globe,
+  Bot,
+  LineSquiggle,
+  Briefcase,
+  MessageCircle,
+} from "lucide-react";
+
+const projects = [
+  {
+    title: "DeepFake Detection",
+    subtitle: "AI/ML Summer Internship Project",
+    tags: [
+      { label: "AI/ML", bg: "bg-purple-500/50" },
+      { label: "Jupyter", bg: "bg-purple-500/50" },
+    ],
+    description:
+      "Advanced deep learning model for detecting manipulated media using computer vision and neural networks. Summer internship research project.",
+    colorClass: "bg-gradient-to-br from-purple-600 to-indigo-700",
+    Icon: Bot, // Placeholder Icon
+    githubLink: "https://github.com/priyesranjan/DeepFake",
+  },
+  {
+    title: "NooBot",
+    subtitle: "Intelligent Python Automation Bot",
+    tags: [
+      { label: "Python", bg: "bg-green-500/50 text-green-800" },
+      { label: "Automation", bg: "bg-green-500/50 text-green-800" },
+    ],
+    description:
+      "Smart automation bot built with Python for task scheduling, data processing, and intelligent workflow automation.",
+    colorClass: "bg-gradient-to-br from-teal-500 to-green-600",
+    Icon: LineSquiggle, // Placeholder Icon
+    githubLink: "https://github.com/priyesranjan/NooBot",
+  },
+  {
+    title: "EduTools",
+    subtitle: "Educational Web Platform",
+    tags: [
+      { label: "HTML/CSS", bg: "bg-pink-500/50 text-pink-800" },
+      { label: "Education", bg: "bg-pink-500/50 text-pink-800" },
+    ],
+    description:
+      "Collection of educational tools and utilities for students and teachers. Interactive learning resources and study aids.",
+    colorClass: "bg-gradient-to-br from-pink-500 to-red-600",
+    Icon: Briefcase, // Placeholder Icon
+    githubLink: "https://github.com/priyesranjan/edutools",
+  },
+  {
+    title: "DialogFlow Chatbot",
+    subtitle: "Conversational AI Assistant",
+    tags: [
+      { label: "DialogFlow", bg: "bg-blue-500/50 text-blue-800" },
+      { label: "NLP", bg: "bg-blue-500/50 text-blue-800" },
+    ],
+    description:
+      "Intelligent chatbot using Google's DialogFlow ES for natural language processing and automated customer support.",
+    colorClass: "bg-gradient-to-br from-blue-400 to-cyan-500",
+    Icon: MessageCircle, // Placeholder Icon
+    githubLink: "https://github.com/priyesranjan/chatbot",
+  },
+];
+
+// --- 2. Card Component ---
+const ProjectCardd = ({ project }) => {
+  const IconComponent = project.Icon;
+
+  return (
+    <div className="flex flex-col h-full bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-shadow hover:shadow-xl hover:scale-105 transition-transform all duration-300 ease-in-out">
+      <div
+        className={`p-6 pt-10 flex flex-col items-center justify-center ${project.colorClass} relative min-h-[140px]`}
+      >
+        <div className="absolute top-0 right-0 w-full h-full opacity-10" />
+
+        <div className="flex items-center justify-center w-16 h-16 rounded-full bg-white/90 shadow-xl mb-4">
+          <IconComponent className="w-8 h-8 text-gray-700" />
+        </div>
+
+        <h3 className="text-xl font-bold text-white text-center">
+          {project.title}
+        </h3>
+        <p className="text-sm text-white/80 text-center">{project.subtitle}</p>
+      </div>
+
+      <div className="p-6 flex flex-col flex-grow">
+        {/* Tags */}
+        <div className="flex flex-wrap gap-2 mb-4">
+          {project.tags.map((tag, index) => (
+            <span
+              key={index}
+              className={`px-2 py-0.5 text-xs font-medium rounded-full ${tag.bg} text-white `}
+            >
+              {tag.label}
+            </span>
+          ))}
+        </div>
+
+        {/* Description */}
+        <p className="text-gray-600 dark:text-gray-300 text-sm flex-grow mb-4">
+          {project.description}
+        </p>
+
+        {/* Button (Always at the bottom) */}
+        <a
+          href={project.githubLink}
+          target="_blank" // Open in a new tab
+          rel="noopener noreferrer" // Security best practice
+          className={`mt-auto w-full py-2 rounded-lg font-semibold text-white transition-all duration-200 
+            flex items-center justify-center hover:scale-105 transition-transform all duration-300 ease-in-out hover:bg-slate-900
+            ${project.colorClass
+              .replace("to-", "hover:to-")
+              .replace("from-", "hover:from-")} 
+            shadow-md hover:shadow-lg`}
+          style={{
+            background: project.colorClass.split("to-")[1]
+              ? project.colorClass.split("to-")[1]
+              : project.colorClass.split("from-")[1],
+          }}
+        >
+          View on GitHub →
+        </a>
+      </div>
+    </div>
+  );
+};
+
+const COLORS = {
+  "primary-green": "#38a169",
+  "primary-blue": "#667eea",
+};
+
+const ProjectCard = ({
+  category = "Educational Platform",
+  projectTitle = "Devskillquest",
+  description = "An interactive learning platform designed for aspiring developers to master coding skills through hands-on projects, code...",
+  techStack = ["Next.js", "TypeScript", "PostgreSQL"],
+  button1Text = "Website",
+  button1Icon = (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="w-5 h-5"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <circle cx="12" cy="12" r="10" />
+      <path d="M12 2a15.3 15.3 0 0 0 4 10 15.3 15.3 0 0 0-4 10 15.3 15.3 0 0 0-4-10 15.3 15.3 0 0 0 4-10zM2.5 7h19M2.5 17h19" />
+    </svg>
+  ),
+  button1Color = "bg-blue-500 hover:bg-blue-600",
+  button1Link = "https://theweddingschapter.com/",
+  graphicColor = "bg-purple-600/10 border-purple-600/20",
+  // Example Icon SVG (Can be replaced with a different Lucide-React or custom SVG)
+  iconSvg = (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="w-24 h-24 text-purple-600"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+    >
+      <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h17a1 1 0 0 1 1 1v14zM2 8h20M7 3v2M7 21v-2M18 3v2M18 21v-2" />
+    </svg>
+  ),
+}) => {
+  const CardButton = ({ text, icon, colorClasses, link }) => (
+    <a
+      href={link}
+      className={`flex-1 flex items-center justify-center space-x-2 px-4 py-2 text-white font-medium rounded-lg ${colorClasses} focus:outline-none focus:ring-4 transition duration-150 shadow-md hover:shadow-lg`}
+    >
+      {icon}
+      <span>{text}</span>
+    </a>
+  );
+
+  return (
+    <div
+      // Main Card Container
+      className="w-full max-w-sm bg-white rounded-xl shadow-xl overflow-hidden transform hover:scale-[1.02] transition duration-300"
+      style={{ fontFamily: "Inter, sans-serif" }}
+    >
+      {/* Image/Graphic Section */}
+      <div className="h-48 bg-gray-100 flex justify-center items-center p-6 relative">
+        {/* Inner Graphic Container (The colored circle) */}
+        <div
+          className={`w-40 h-40 rounded-full ${graphicColor} flex justify-center items-center shadow-lg`}
+        >
+          {iconSvg}
+        </div>
+      </div>
+
+      {/* Content Area */}
+      <div className="p-6">
+        {/* Category Tag (Chip) */}
+        <span className="inline-flex items-center px-3 py-1 bg-indigo-100 text-indigo-700 text-xs font-medium rounded-full mb-4">
+          {category}
+        </span>
+
+        {/* Title */}
+        <h2 className="text-2xl font-bold text-gray-800 mb-2">
+          {projectTitle}
+        </h2>
+
+        {/* Description */}
+        <p className="text-gray-600 text-sm leading-relaxed mb-4">
+          {description}
+        </p>
+
+        {/* Tech Stack Tags */}
+        <div className="flex flex-wrap gap-2 mb-6">
+          {techStack.map((tech, index) => (
+            <span
+              key={index}
+              className="px-3 py-1 text-xs font-semibold text-gray-700 bg-gray-200 rounded-full"
+            >
+              {tech}
+            </span>
+          ))}
+        </div>
+
+        {/* Action Buttons (Using the single button prop for Devskillquest) */}
+        <div className="flex flex-col sm:flex-row gap-4">
+          <CardButton
+            text={button1Text}
+            icon={button1Icon}
+            colorClasses={button1Color}
+            link={button1Link}
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const steps = [
+  {
+    id: 1,
+    title: "Discovery & Planning",
+    details:
+      "We deep dive into your requirements, understand your business goals, analyze competitors, and create a comprehensive project roadmap with clear milestones.",
+    isComplete: true,
+    Icon: Search,
+    iconBg: "bg-gray-700",
+  },
+  {
+    id: 2,
+    title: "Design & Prototype",
+    details:
+      "Our design team creates intuitive wireframes, stunning UI mockups, and interactive prototypes that bring your vision to life before development begins.",
+    isComplete: true,
+    Icon: Brush,
+    iconBg: "bg-gray-700",
+  },
+  {
+    id: 3,
+    title: "Development & Testing",
+    details:
+      "Expert developers write clean, scalable code while our QA team performs rigorous testing to ensure flawless functionality across all devices and platforms.",
+    isComplete: true,
+    Icon: Bug,
+    iconBg: "bg-gray-700",
+  },
+  {
+    id: 4,
+    title: "Deployment & Support",
+    details:
+      "We handle the complete deployment process and provide ongoing maintenance, updates, and 24/7 technical support to keep your solution running smoothly.",
+    isComplete: true,
+    Icon: Globe,
+    iconBg: "bg-gray-700",
+  },
+];
+
+const StepperItem = ({ step, isFirst, isLast }) => {
+  const IconComponent = step.Icon;
+
+  return (
+    <div className="flex w-full mb-10 last:mb-0">
+      <div className="flex flex-col items-center w-8">
+        {!isFirst && (
+          <div
+            className={`h-10 w-0.5 ${
+              step.isComplete ? "bg-green-600" : "bg-gray-700"
+            }`}
+          />
+        )}
+        {isFirst && <div className="h-5" />}
+
+        <div
+          className={`flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-full ring-4 ring-white dark:ring-gray-900 ${step.iconBg}`}
+        >
+          <IconComponent
+            className={`w-4 h-4 ${
+              step.isComplete ? "text-white" : "text-gray-400"
+            }`}
+          />
+        </div>
+        {!isLast && (
+          <div
+            className={`flex-grow w-0.5 ${
+              step.isComplete ? "bg-green-600" : "bg-gray-700"
+            }`}
+          />
+        )}
+      </div>
+
+      <div className="flex-1 ms-4 pt-1">
+        <h3 className="font-semibold leading-tight text-white dark:text-gray-100">
+          {step.title}
+        </h3>
+        <p className="text-sm text-gray-400">{step.details}</p>
+      </div>
+    </div>
+  );
+};
 
 // Icon Components (using Tailwind classes for styling)
 const Icon1 = () => (
@@ -265,6 +585,84 @@ const AnimatedFloatingIcon = ({ children, finalPosition, delay }) => {
 };
 
 const Home = () => {
+  // Data for the first card ("BEU Mate")
+  const beuMateProps = {
+    category: "AI-Powered Educational Platform",
+    projectTitle: "BEU Mate - Bihar Engineering",
+    description:
+      "An AI-powered study companion for B.Tech students offering personalized learning, career guidance, and placement preparation.",
+    techStack: ["React Native", "Node.js", "AI/ML"],
+    button1Text: "Play Store",
+    button1Icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="w-5 h-5"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        stroke="none"
+      >
+        <path d="M8 5v14l11-7z" />
+      </svg>
+    ),
+    button1Color: "bg-primary-green hover:bg-green-700 focus:ring-green-500/50",
+    button1Link:
+      "https://play.google.com/store/apps/details?id=com.priyesranjan.beumate",
+    graphicColor: "bg-blue-600/10 border-blue-600/20",
+    iconSvg: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="w-24 h-24 text-blue-600"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+      >
+        <path d="M12 2L1 7v10l11 5 11-5V7L12 2zm1 14.93L6.83 14 13 11.07V16.93zm0-3.15L6.83 10.85 13 7.92v5.86zM22 7.66l-10 4.74v5.86l10-4.74V7.66z" />
+        <path d="M14 12.83l-2.07-.98-6.1-2.89L12 6.81l6.1 2.89 2.07.98-6.1 2.89z" />
+        <path d="M12 4.19L2 9v8l10 5 10-5V9l-10-4.81zm0 13.75L2 14v-4l10 5 10-5v4l-10 4.94z" />
+      </svg>
+    ),
+  };
+
+  // Data for the second card ("Devskillquest") - using defaults for the website button
+  const devskillquestProps = {
+    category: "Educational Platform",
+    projectTitle: "Devskillquest",
+    description:
+      "An interactive learning platform designed for aspiring developers to master coding skills through hands-on projects, coding challenges, and personalized learning paths. Focuses on full-stack development and cloud technologies.",
+    techStack: ["Next.js", "TypeScript", "PostgreSQL"],
+    button1Text: "Website",
+    button1Icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="w-5 h-5"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        stroke="none"
+      >
+        <path d="M8 5v14l11-7z" />
+      </svg>
+    ),
+    button1Color: "bg-blue-500 hover:bg-blue-600",
+    button1Link: "https://devskillquest.com/",
+    graphicColor: "bg-purple-600/10 border-purple-600/20",
+    iconSvg: (
+      // Custom SVG for Devskillquest - representing code/development
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="w-24 h-24 text-purple-600"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <polyline points="16 18 22 12 16 6" />
+        <polyline points="8 6 2 12 8 18" />
+        <line x1="4" y1="12" x2="20" y2="12" />
+      </svg>
+    ),
+  };
+
   return (
     <>
       <section className="relative w-full h-screen flex items-center justify-center z-0 md:pt-0 pt-10">
@@ -834,7 +1232,7 @@ hr@appdost.in"
               ></lord-icon>
             </span>
             <div className="text-xl font-bold my-4 text-blue-500">
-             Web Development
+              Web Development
             </div>
             <p className="text-center">
               Responsive and scalable web <br />
@@ -1053,6 +1451,125 @@ hr@appdost.in"
             </div>
           </div>
         </div>
+      </div>
+      <div className=" w-[90%] mx-auto border border-slate-600 m-8"></div>
+
+      <div className=" text-white flex flex-col items-center mx-auto">
+        <div className="text-center ">
+          <label htmlFor="Services">
+            <span className="text-white text-4xl font-bold mb-10 mt-16 border-b-4 border-blue-500 ">
+              Our Development Process
+            </span>
+          </label>
+          <p className="my-8 text-white text-xl">
+            A proven methodology that ensures quality, efficiency, and client
+            satisfaction
+          </p>
+        </div>
+        <div className="flex flex-col justify-center w-100 mb-8 mx-auto ">
+          {steps.map((step, index) => (
+            <StepperItem
+              key={step.id}
+              step={step}
+              isFirst={index === 0}
+              isLast={index === steps.length - 1}
+            />
+          ))}
+        </div>
+      </div>
+      <div className=" w-[90%] mx-auto border border-slate-600 m-8"></div>
+      <div className="mx-auto flex flex-col justify-center">
+        <div className="text-center ">
+          <label htmlFor="Projects">
+            <span className="text-white text-4xl font-bold mb-10 mt-16 border-b-4 border-blue-500 ">
+              Our Featured Projects
+            </span>
+          </label>
+          <p className="my-8 text-white text-xl">
+            Real solutions for real businesses - explore our successful projects
+          </p>
+        </div>
+        <div className="p-4 md:p-10 bg-slate-900 mx-auto px-10 w-[90%] rounded-2xl">
+          <style
+            dangerouslySetInnerHTML={{
+              __html: `
+            /* Inject custom colors for demonstration */
+            .bg-primary-green { background-color: ${COLORS["primary-green"]}; }
+            .hover\\:bg-green-700:hover { background-color: #2f855a; }
+            .focus\\:ring-green-500\\/50:focus { --tw-ring-color: #48bb78; }
+            .bg-primary-blue { background-color: ${COLORS["primary-blue"]}; }
+            .hover\\:bg-indigo-600:hover { background-color: #5a67d8; }
+            .focus\\:ring-indigo-500\\/50:focus { --tw-ring-color: #667eea; }
+            @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        `,
+            }}
+          />
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
+            {/* Usage of the BEU Mate card */}
+            <ProjectCard {...beuMateProps} />
+
+            {/* Usage of the Devskillquest card */}
+            <ProjectCard {...devskillquestProps} />
+
+            <ProjectCard
+              category="Wedding Planning Portal"
+              projectTitle="The Weddings Chapter"
+              description="A premium wedding planning platform connecting couples with top vendors, venues, and services. Features vendor management and client-side scheduling."
+              techStack={["PHP", "Laravel", "MySQL"]}
+              graphicColor="bg-red-700/10 border-red-700/20"
+              iconSvg={
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-24 h-24 text-red-700"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="none"
+                >
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm4-9h-3V7c0-.55-.45-1-1-1s-1 .45-1 1v4H8c-.55 0-1 .45-1 1s.45 1 1 1h3v3c0 .55.45 1 1 1s1-.45 1-1v-3h3c.55 0 1-.45 1-1s-.45-1-1-1z" />
+                </svg>
+              }
+            />
+          </div>
+        </div>
+        <div className="flex justify-center">
+          <button className="bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl px-4 py-3 text-white font-semibold rounded-full transition-transform all duration-300 ease-in-out hover:scale-105 hover:cursor-pointer">
+            View All Projects
+          </button>
+        </div>
+      </div>
+      <div className=" w-[90%] mx-auto border border-slate-600 m-8"></div>
+      <div>
+        <div className="text-center ">
+          <label htmlFor="Projects">
+            <span className="text-white text-4xl font-bold mb-10 mt-16 border-b-4 border-blue-500 ">
+              Open Source & Innovation Projects
+            </span>
+          </label>
+          <p className="my-8 text-white text-xl">
+            Explore our contributions to AI, automation, and educational
+            technology
+          </p>
+        </div>
+        <div className=" bg-gray-100 dark:bg-gray-900 sm:p-12">
+          <div className="flex flex-wrap justify-center gap-8 max-w-6xl mx-auto">
+            {projects.map((project, index) => (
+              <div
+                key={index}
+                className="w-full sm:w-[calc(50%-2rem)] lg:w-[calc(33.3333%-2rem)] min-w-[300px]"
+              >
+                <ProjectCardd project={project} />
+              </div>
+            ))}
+          </div>
+        </div>
+          <div className="mx-auto text-white flex flex-col items-center gap-4">
+          <p>Interested in working with us on your next project?</p>
+          <button className="bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl px-4 py-3 text-white font-semibold rounded-full transition-transform all duration-300 ease-in-out hover:scale-105 hover:cursor-pointer">
+            Start Your Project
+          </button>
+        </div>
+        
       </div>
       <div className=" w-[90%] mx-auto border border-slate-600 m-8"></div>
     </>
