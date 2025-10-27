@@ -55,7 +55,7 @@ const Careers = () => {
               Social Media
             </p>
             <p className="my-2 text-center hover:underline">
-              <div className=" flex gap-3">
+              <div className=" flex gap-4 justify-center">
                 <span><img className="hover:scale-110 transition-transform all duration-300 ease-in-out" src="/instagram.png" height={28} width={28} alt="" /></span>
                 <span><img className="hover:scale-110 transition-transform all duration-300 ease-in-out" src="/twitter.png" height={28} width={28} alt="" /></span>
                 <span><img className="hover:scale-110 transition-transform all duration-300 ease-in-out" src="/linkedin.png" height={28} width={28} alt="" /></span>
