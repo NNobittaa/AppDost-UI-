@@ -328,7 +328,7 @@ const MissionSection = () => {
           </div>
           <div className="services-box text-white my-12 flex flex-col gap-8 ">
             <div className="flex md:flex-row flex-col gap-8 mx-auto w-[80%]">
-              <div className="border bg-slate-700 border-slate-600 rounded-xl py-8  hover:bg-slate-600 transition-transform all duration-300 ease-in-out hover:scale-105 items-center flex flex-col w-120">
+              <div className="border bg-slate-700 border-slate-600 rounded-xl py-6 hover:bg-slate-600 transition-transform all duration-300 ease-in-out hover:scale-105 items-center flex flex-col">
                 <div className="text-xl font-bold my-4 text-center">
                   🎯 For Rural Businesses
                 </div>
@@ -381,7 +381,7 @@ const MissionSection = () => {
                   </p>
                 </div>
               </div>
-              <div className="border bg-slate-700 border-slate-600 rounded-xl py-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out hover:scale-105 items-center flex flex-col w-120">
+              <div className="border bg-slate-700 border-slate-600 rounded-xl py-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out hover:scale-105 items-center flex flex-col">
                 <div className="text-xl font-bold my-4 text-center">
                   📚 For Educational Institutions
                 </div>
@@ -435,7 +435,7 @@ const MissionSection = () => {
                   </p>
                 </div>
               </div>
-              <div className="border bg-slate-700 border-slate-600 rounded-xl py-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out hover:scale-105 items-center flex flex-col w-120">
+              <div className="border bg-slate-700 border-slate-600 rounded-xl py-8 hover:bg-slate-600 transition-transform all duration-300 ease-in-out hover:scale-105 items-center flex flex-col">
                 <div className="text-xl font-bold my-4 text-center">
                   🚀 For Startups
                 </div>
