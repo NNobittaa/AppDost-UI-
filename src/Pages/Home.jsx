@@ -1500,7 +1500,7 @@ hr@appdost.in"
       </div>
       <div className=" w-[90%] mx-auto border border-slate-600 m-8"></div>
 
-      <div className=" text-white flex flex-col items-center mx-auto">
+      <div className=" Deve-Process text-white flex flex-col items-center mx-auto">
         <div className="text-center ">
           <label htmlFor="Services">
             <span className="text-white text-4xl font-bold mb-10 mt-16 border-b-4 border-blue-500 mx-8 ">
@@ -1524,7 +1524,7 @@ hr@appdost.in"
         </div>
       </div>
       <div className=" w-[90%] mx-auto border border-slate-600 m-8"></div>
-      <div className="mx-auto flex flex-col justify-center">
+      <div className="Featured-Products mx-auto flex flex-col justify-center">
         <div className="text-center ">
           <label htmlFor="Projects">
             <span className="text-white text-4xl font-bold mb-10 mt-16 border-b-4 border-blue-500 mx-8">
@@ -1585,8 +1585,8 @@ hr@appdost.in"
         </div>
       </div>
       <div className=" w-[90%] mx-auto border border-slate-600 m-8"></div>
-      <div>
-        <div className="text-center ">
+      <div className="Innovation-Projects">
+        <div className=" text-center ">
           <label htmlFor="Projects">
             <span className="text-white text-4xl font-bold mb-10 mt-16 border-b-4 border-blue-500 mx-8 text-center">
               Open Source & Innovation Projects
@@ -1618,18 +1618,18 @@ hr@appdost.in"
         
       </div>
       <div className=" w-[90%] mx-auto border border-slate-600 m-8"></div>
-      <div>
+      <div className="Tech-we-master">
         <div className="text-center ">
           <label htmlFor="Projects">
-            <span className="text-white text-4xl font-bold mb-10 mt-16 border-b-4 border-blue-500 ">
+            <span className="text-white text-4xl font-bold mb-10 mt-16 border-b-4 border-blue-500 mx-8">
               Technologies We Master
             </span>
           </label>
-          <p className="my-8 text-white text-xl">
+          <p className="my-8 text-white text-xl mx-8">
             We leverage cutting-edge technologies to build robust, scalable, and innovative solutions
           </p>
         </div>
-        <div className=" border flex mx-auto w-[80%] justify-around flex-wrap">
+        <div className=" flex mx-auto w-[80%] justify-around flex-wrap">
           <div className="React border p-8 w-32 rounded-2xl text-center bg-white hover:scale-105 transition-transform all duration-300 ease-in-out hover:cursor-pointer hover:translate-1 m-4">
             <span className="text-4xl "><img className="" src="./src/assets/react.svg" alt="" /></span><br />
             <p className="font-semibold">React</p>
@@ -1667,18 +1667,18 @@ hr@appdost.in"
         
       </div>
       <div className=" w-[90%] mx-auto border border-slate-600 m-8"></div>
-      <div>
+      <div className="latest updates">
         <Link to='/blog'><div className=" bg-white dark:bg-gray-900 pb-16 px-4 flex flex-col items-center font-sans">
       
       {/* Header Section */}
-      <div className="max-w-3xl text-center mb-16">
-        <span className="inline-block px-3 py-1 mb-4 text-xs font-medium tracking-wider uppercase rounded-full bg-purple-100 text-purple-600 dark:bg-purple-900/40 dark:text-purple-300">
+      <div className="max-w-3xl text-center mb-12">
+        <span className="inline-block px-3 py-1 mb-4 text-xs font-medium tracking-wider uppercase rounded-full bg-purple-100 text-purple-600 dark:bg-purple-900/40 dark:text-purple-300 mx-8">
           Latest Updates
         </span>
-        <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 dark:text-white mb-4">
+        <h2 className="text-4xl mx-8 sm:text-5xl font-extrabold text-gray-900 dark:text-white mb-4">
           Insights & <span className="text-purple-600 dark:text-purple-400">Tech Articles</span>
         </h2>
-        <p className="text-lg text-gray-600 dark:text-gray-400">
+        <p className="text-lg text-gray-600 dark:text-gray-400 mx-8">
           Stay informed with our latest insights, tech trends, and industry expertise
         </p>
       </div>
